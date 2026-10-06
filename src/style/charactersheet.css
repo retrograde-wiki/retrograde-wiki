@@ -1,0 +1,228 @@
+
+
+
+.main-content {
+position: relative;
+z-index: 1;
+overflow-y: auto;
+height: 100vh;
+}
+.about-link:hover {
+color: var(--charcolor);
+}
+.map-link:hover {
+color: var(--charcolor);
+}
+.factions-link:hover {
+color: var(--charcolor);
+}
+.characters-link:hover {
+color: var(--charcolor);
+}
+.explore-link:hover {
+color: var(--charcolor);
+}
+.main-width {
+max-width: 1014px;
+}
+@media (max-width: 768px) {
+.character-image {
+position: static;
+}
+}
+b {
+color: var(--charcolor);
+}
+.character-sheet {
+display: flex;
+flex-wrap: wrap;
+gap: 2rem;
+position: relative;
+align-items: flex-start;
+margin: 2rem 0;
+width: 100%;
+max-width: 1200px;
+}
+.character-image {
+flex: 1.3;
+min-width: 300px;
+max-width: 400px;
+text-align: center;
+position: sticky;
+top: 20px;
+align-self: flex-start;
+}
+.character-image img {
+width: 100%;
+height: auto;
+border-radius: 8px;
+}
+.character-info {
+flex: 2;
+min-width: 300px;
+width: 60%;
+}
+.character-info h2 {
+margin-top: 0;
+font-size: ;
+padding-bottom: 0.5rem;
+text-align: center;
+font-size: 40px;
+}
+.two-column-section {
+display: flex;
+justify-content: space-between;
+margin: 1rem 0;
+text-align: center;
+gap: 1rem;
+width: 100%;
+padding-top: 20px;
+padding-bottom: 15px;
+border-bottom: 2px solid;
+border-top: 2px solid;
+border-color:  var(--charcolor);
+
+}
+.column {
+flex: 1;
+padding: 0 1rem;
+
+}
+.detail-item {
+margin-bottom: 0.5rem;
+}
+
+
+
+.detail-label {
+font-weight: bold;
+display: block;
+margin-bottom: 0.25rem;
+color: var(--charcolor)
+}
+
+.signature-label {
+font-weight: bold;
+    display: inline-block;
+margin-bottom: 0.25rem;
+color: var(--charcolor);
+
+}
+
+
+.signature-answer {
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
+.detail-value {
+font-weight: normal;
+}
+
+.detail-value a {
+color: var(--text-color) !important;
+  text-decoration: underline;
+
+}
+
+.preferences-section {
+margin-top: 1.5rem;
+padding-top: 1.5rem;
+width: 100%;
+}
+
+
+
+.signature-section {
+margin-top: 1.5rem;
+padding-top: 1.5rem;
+width: 100%;
+    border-bottom: 0px solid;
+
+
+
+}
+.preferences-list {
+padding-left: 0;
+text-align: left;
+margin-top: 0.5rem;
+}
+.preferences-list li {
+padding: 0.25rem 0;
+}
+.preferences-list li::marker {
+color: var(--charcolor)
+}
+.trivia-list {
+list-style-type: ;
+padding-left: 0;
+text-align: left;
+margin-top: 0.5rem;
+}
+a {color: var(--charcolor)}
+h3 {color: var(--charcolor)}
+.trivia-list li {
+padding: 0.25rem 0;
+}
+.trivia-list li::marker {
+color: var(--charcolor)
+}
+@media (max-width: 768px) {
+.character-sheet,
+.two-column-section {
+flex-direction: column;
+}
+.column {
+padding: 0;
+}
+.character-image,
+.character-info {
+max-width: 100%;
+width: 100%;
+}
+}
+.spoiler {
+background-color: black;
+color: black;
+cursor: pointer;
+transition: color 0.2s;
+padding: 0.1em 0.2em;
+}
+
+.spoiler b {
+background-color: black;
+color: black;
+cursor: pointer;
+transition: color 0.2s;
+padding: 0.1em 0.2em;
+}
+.spoiler:hover {
+color: white;
+background-color: transparent;
+}
+
+.spoiler b:hover {
+color: var(--charcolor);
+background-color: transparent;
+}
+
+p.spoiler {
+background-color: #000;
+color: #000;
+cursor: pointer;
+transition: color 0.2s;
+}
+p.spoiler:hover {
+color: var(--textcolor);
+background-color: transparent;
+}
+.detail-value.spoiler {
+background-color: #000;
+color: #000;
+cursor: pointer;
+transition: color 0.2s;
+}
+.detail-value.spoiler:hover {
+color: var(--textcolor);
+background-color: transparent;
+}

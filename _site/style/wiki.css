@@ -1,0 +1,189 @@
+/* Wiki-specific styles - Add to your existing style.css or create as wiki.css */
+
+/* Wiki header layout - flag on top */
+
+
+.main-content h1  {
+  margin-top: 20px !important;
+  margin-bottom: 4px !important;
+  font-family: 'Butler';
+  font-size: 54px;
+}
+
+
+
+.wiki-header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.wiki-image {
+  display: inline-block;
+  max-width: 300px;
+}
+
+.wiki-image img {
+  width: 100%;
+  height: auto;
+  border: 2px solid var(--border-color);
+  border-radius: 4px;
+}
+
+.wiki-caption {
+  text-align: center;
+  font-style: italic;
+  margin-top: 8px;
+  font-size: 14px;
+  color: var(--text-color);
+  opacity: 0.7;
+}
+
+/* Country info section */
+.wiki-info {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Country title styling */
+.country-title {
+  font-family: 'Butler';
+  font-size: 48px;
+  margin: 20px 0 10px 0;
+  color: var(--charcolor);
+}
+
+.country-subtitle {
+  font-size: 18px;
+  color: var(--text-color);
+  margin: 0 0 20px 0;
+  opacity: 0.8;
+}
+
+.pronunciation {
+  font-style: italic;
+  opacity: 0.6;
+}
+
+/* Info table - country stats */
+.info-table {
+  background-color: var(--bg);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 20px;
+text-align: left;
+}
+
+.info-row {
+  display: flex;
+  margin-bottom: 12px;
+  align-items: flex-start;
+}
+
+.info-row:last-child {
+  margin-bottom: 0;
+}
+
+.info-label {
+  font-weight: bolder;
+  color: var(--charcolor);
+  min-width: 120px;
+  flex-shrink: 0;
+}
+
+.info-value {
+  flex: 1;
+  color: var(--text-color);
+}
+
+/* Collapsible Table of contents using callout styling */
+.toc-container {
+  margin: 30px 0;
+}
+
+.toc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.toc-header h3 {
+  margin: 0;
+  color: var(--charcolor);
+}
+
+.toc-toggle {
+  color: var(--charcolor);
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.toc-header:hover .toc-toggle {
+  color: var(--hl-color);
+}
+
+.toc-list {
+  margin: 15px 0 0 0;
+  padding-left: 20px;
+}
+
+.toc-list li {
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.toc-list a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.toc-list a:hover {
+  color: var(--charcolor);
+}
+
+/* Section styling */
+.section {
+  margin: 40px 0;
+}
+
+.section h2 {
+  font-family: 'Butler';
+  font-size: 32px;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--charcolor);
+  color: var(--charcolor);
+}
+
+.section h3 {
+  font-size: 24px;
+  margin: 25px 0 10px 0;
+  color: var(--charcolor);
+}
+
+.section p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .wiki-image {
+    max-width: 250px;
+  }
+
+  .country-title {
+    font-size: 36px;
+  }
+
+  .info-row {
+    flex-direction: column;
+  }
+
+  .info-label {
+    min-width: auto;
+    margin-bottom: 5px;
+  }
+}

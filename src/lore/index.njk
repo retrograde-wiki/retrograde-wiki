@@ -1,0 +1,13 @@
+---
+title: Lore
+subtitle: All entries
+layout: lore.njk
+permalink: /lore/index.html
+eleventyExcludeFromCollections: true
+---
+
+<ul>
+{% for item in collections.lore %}
+  <li><a href="{{ item.url }}">{{ item.data.title }}</a>{% if item.data.subtitle %} – {{ item.data.subtitle }}{% endif %}</li>
+{% endfor %}
+</ul>

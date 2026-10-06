@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <link rel="stylesheet" href="/style/style.css">
+  <link rel="stylesheet" href="/style/charactersheet.css">
+  <link rel="stylesheet" href="/style/root.css">
+  <link rel="icon" href="https://file.garden/aBb6prPw8QkQxICV/website/placeholder/Logo" />
+
+  <title>RETROGRADE - {{ name | upper }}</title>
+  <style>
+    :root {
+      --charcolor: var(--{{ arc or "grey" }});
+      --bg: var(--bg-{{ arc or "grey" }});
+      --hl-color: var(--hl-{{ arc or "grey" }});
+    }
+  </style>
+</head>
+<body class="checker-page">
+
+  <div id="header-placeholder"></div>
+  <script src="/header.js"></script>
+
+  <aside class="sidebar"></aside>
+
+  <main class="main-content">
+    <main class="main-width">
+      <div class="character-sheet">
+
+        <div class="character-image">
+          <img src="{{ image or ('/im/refs/' + page.fileSlug + '.png') }}" alt="{{ name }}">
+        </div>
+
+        <div class="character-info">
+          <h2>{{ name }}</h2>
+
+          {% if music %}
+          <div id="musicPlayer" class="music-player-widget">
+            <script src="/style/music.js"></script>
+            <img src="{{ toy }}" alt="Play Music" class="music-icon">
+            <audio id="musicAudio" preload="none">
+              <source src="{{ music }}" type="audio/mp3">
+            </audio>
+          </div>
+          {% endif %}
+
+          <div class="two-column-section">
+            <div class="column">
+              <div class="detail-item"><span class="detail-label">PRONOUNS</span><span class="detail-value">{{ pronouns }}</span></div>
+              <div class="detail-item"><span class="detail-label">RESIDENCE</span><span class="detail-value">{{ residence }}</span></div>
+              <div class="detail-item"><span class="detail-label">BIRTHPLACE</span><span class="detail-value">{{ birthplace }}</span></div>
+              <div class="detail-item"><span class="detail-label">JOB</span><span class="detail-value">{{ job }}</span></div>
+            </div>
+            <div class="column">
+              <div class="detail-item"><span class="detail-label">AGE</span><span class="detail-value">{{ age }}</span></div>
+              <div class="detail-item"><span class="detail-label">ETHNICITY</span><span class="detail-value">{{ ethnicity }}</span></div>
+              <div class="detail-item"><span class="detail-label">SIGNATURE</span><span class="detail-value">{{ signature }}</span></div>
+              <div class="detail-item"><span class="detail-label">ZODIAC</span><span class="detail-value">{{ zodiac }}</span></div>
+            </div>
+          </div>
+
+          {% if adjectives %}
+          <i><h3 style="text-align: center;">{{ adjectives | join(", ") | upper }}</h3></i>
+          {% endif %}
+
+          {{ content | safe }}
+
+          {% if vice %}
+          <div class="two-column-section vice-section">
+            <div class="column">
+              <div class="signature-label">VICE</div>
+              <div class="signature-answer">{{ vice.name }}</div>
+              {% if vice.text %}<p>{{ vice.text | safe }}</p>{% endif %}
+            </div>
+          </div>
+          {% endif %}
+
+          {% if likes or dislikes %}
+          <div class="two-column-section preferences-section">
+            <div class="column">
+              <div class="detail-label">LIKES</div>
+              <ul class="preferences-list">
+                {% for item in likes %}<li>{{ item | safe }}</li>{% endfor %}
+              </ul>
+            </div>
+            <div class="column">
+              <div class="detail-label">DISLIKES</div>
+              <ul class="preferences-list">
+                {% for item in dislikes %}<li>{{ item | safe }}</li>{% endfor %}
+              </ul>
+            </div>
+          </div>
+          {% endif %}
+
+          {% if trivia %}
+          <div class="column">
+            <div class="detail-label">TRIVIA</div>
+            <ul class="trivia-list">
+              {% for item in trivia %}<li>{{ item | safe }}</li>{% endfor %}
+            </ul>
+          </div>
+          {% endif %}
+
+        </div>
+      </div>
+    </main>
+  </main>
+</body>
+</html>

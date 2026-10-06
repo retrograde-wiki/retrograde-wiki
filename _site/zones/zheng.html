@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <link rel="stylesheet" href="/style/style.css">
+  <link rel="stylesheet" href="/style/root.css">
+  <link rel="stylesheet" href="/style/wiki.css">
+  <link rel="icon" href="https://file.garden/aBb6prPw8QkQxICV/website/placeholder/Logo" />
+  <title>RETROGRADE - ZONE NAME</title>
+  <style>
+    :root {
+      --charcolor: var(--yellow);
+      --bg: var(--bg-grey);
+      --hl-color: var(--hl-yellow);
+    }
+  </style>
+</head>
+<body>
+
+  <div id="header-placeholder"></div>
+  <script src="/header.js"></script>
+
+  <aside class="sidebar"></aside>
+
+  <main class="main-content">
+  <main class="main-width">
+
+    <div class="wiki-layout">
+      <!-- Main Content Area -->
+      <div class="wiki-main">
+        <h1 class="country-title">Zone Name</h1>
+        <img src="/im/art/rho.png" alt="Zone Name" class="zone-art">
+        
+        <p class="country-subtitle">Pronunciation
+          <span class="pronunciation">/part2/</span>
+        </p>
+        
+
+        <div class="callout toc-container">
+          <div class="toc-header" onclick="toggleTOC()">
+            <h3>Contents</h3>
+            <span class="toc-toggle" id="toc-toggle">[hide]</span>
+          </div>
+          <ol class="toc-list" id="toc-content" role="list"></ol>
+        </div>
+
+        <div class="zone-body">
+          <h2>OVERVIEW</h2>
+<p>text text text text text text text text text text text text text text text text text text</p>
+<h2>GEOGRAPHY &amp; INFRASTRUCTURE</h2>
+<p>text text text text text text text text text text text text text text text text text text</p>
+<h2>HISTORY</h2>
+<div class="callout">
+📜 This section is <b>not</b> required reading, and is mainly here for those curious.
+</div>
+<p>text text text text text text text text text text text text text text text text text text</p>
+<h2>CULTURE</h2>
+<p>text text text text text text text text text text text text text text text text text text</p>
+<h3>(zonename) Appearance</h3>
+<p>text text text text text text text text text text text text text text text text text text</p>
+<h3>Fashion</h3>
+<p>text text text text text text text text text text text text text text text text text text</p>
+<h3>Music</h3>
+<p>text text text text text text text text text text text text text text text text text text</p>
+<h3>Food &amp; Drink</h3>
+<p>text text text text text text text text text text text text text text text text text text</p>
+<h3>Sports &amp; Festivals</h3>
+<p>text text text text text text text text text text text text text text text text text text</p>
+<h3>Local Speech</h3>
+<ul>
+<li><strong>[Term]</strong></li>
+<li><strong>[Term]</strong></li>
+<li><strong>[Term]</strong></li>
+<li><strong>[Term]</strong></li>
+<li><strong>[Term]</strong></li>
+</ul>
+<h2>DAILY LIFE</h2>
+<p>text text text text text text text text text text text text text text text text text text</p>
+<h2>SUBZONES / DISTRICTS</h2>
+<p>text text text text text text text text text text text text text text text text text text</p>
+<h3>[District Name]</h3>
+<p>text text text text text text text text text text text text text text text text text text</p>
+<h3>[District Name]</h3>
+<p>text text text text text text text text text text text text text text text text text text</p>
+<h3>[District Name]</h3>
+<p>text text text text text text text text text text text text text text text text text text</p>
+<h2>KEY LOCATIONS</h2>
+<ul>
+<li><strong>[Location]</strong></li>
+<li><strong>[Location]</strong></li>
+<li><strong>[Location]</strong></li>
+<li><strong>[Location]</strong></li>
+<li><strong>[Location]</strong></li>
+</ul>
+<h2>ECONOMY</h2>
+<p>text text text text text text text text text text text text text text text text text text</p>
+<h2>HOOKS &amp; RUMORS</h2>
+<p>text text text text text text text text text text text text text text text text text text</p>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<h2>TRIVIA</h2>
+<p>text text text text text text text text text text text text text text text text text text</p>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+
+        </div>
+      </div>
+
+      <!-- Sidebar Infobox -->
+      <aside class="wiki-infobox">
+        <div class="infobox-header">
+          <h2>Republic of Zone</h2>
+        </div>
+
+        
+        <div class="infobox-flag">
+          <img src="/im/art/rho.png" alt="Flag of Zone Name">
+        </div>
+        
+
+        <div class="infobox-content">
+          <div class="infobox-row"><div class="infobox-label">Capital:</div><div class="infobox-value">Capital City</div></div>
+          <div class="infobox-row"><div class="infobox-label">Continent:</div><div class="infobox-value">Continent</div></div>
+          <div class="infobox-row"><div class="infobox-label">Demonym:</div><div class="infobox-value">Demonym</div></div>
+          <div class="infobox-row"><div class="infobox-label">Government:</div><div class="infobox-value">Government type</div></div>
+          
+          <div class="infobox-row"><div class="infobox-label">Currency:</div><div class="infobox-value">Currency</div></div>
+          <div class="infobox-row"><div class="infobox-label">Languages:</div><div class="infobox-value">Language</div></div>
+          
+        </div>
+      </aside>
+    </div>
+
+  </main>
+  </main>
+
+  <script>
+    // Build the Contents list from the ## headings
+    const toc = document.getElementById('toc-content');
+    document.querySelectorAll('.zone-body h2').forEach(function (h) {
+      const id = h.id || h.textContent.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+      h.id = id;
+      const li = document.createElement('li');
+      const a = document.createElement('a');
+      a.href = '#' + id;
+      a.textContent = h.textContent;
+      li.appendChild(a);
+      toc.appendChild(li);
+    });
+
+    function toggleTOC() {
+      const content = document.getElementById('toc-content');
+      const toggle = document.getElementById('toc-toggle');
+      if (content.style.display === 'none') {
+        content.style.display = 'block';
+        toggle.textContent = '[hide]';
+      } else {
+        content.style.display = 'none';
+        toggle.textContent = '[show]';
+      }
+    }
+  </script>
+
+  <script src="/style/zone.js"></script>
+</body>
+</html>
