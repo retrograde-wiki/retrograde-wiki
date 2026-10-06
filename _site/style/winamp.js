@@ -53,3 +53,5 @@
   var btn = document.getElementById('winamp-toggle');
   if (btn) btn.addEventListener('click', toggle);
 })();
+
+// putting this note so i can push winamp on lazygit again
