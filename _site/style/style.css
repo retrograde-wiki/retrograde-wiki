@@ -868,16 +868,14 @@ header {
 
 #winamp-container {
   position: fixed !important;
-  transform-origin: top left;
+  transform: scale(1.5);
   top: 90px;
   left: 20px;
   width: 0;
   height: 0;
-  z-index: 999999999 !important;
+  z-index: 2147483647 !important;
 }
 
 #webamp {
-  z-index: 999999999 !important;
-  transform: scale(1.2) !important;
-
+  z-index: 2147483647 !important;
 }
