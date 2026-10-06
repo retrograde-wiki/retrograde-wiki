@@ -3,6 +3,8 @@ title: What is Retrograde?
 subtitle: Just the Basics.
 ---
 
+<img src="/im/art/rho.png"> <br>
+
 **RETROGRADE** is a science-fiction setting, set nearly a thousand years after Earth was abandoned due to global warming. Eventually through their travels, humanity found a new home on Planet Zenith .
 
 
