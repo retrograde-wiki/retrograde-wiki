@@ -1,6 +1,6 @@
 ---
 name: Rho
-arc: orange
+arc: red
 demonym: Rhoan
 population: Large
 infobox:
