@@ -1,76 +1,64 @@
-// Hover sound effect for all links
-(function() {
-  // Create audio element
-  const hoverSound = new Audio('https://file.garden/aBb6prPw8QkQxICV/website/sound/HOVER.mp3');
-  hoverSound.volume = 0.5; // Adjust volume as needed (0.0 to 1.0)
+(function () {
+  var HOVER_URL = 'https://file.garden/aBb6prPw8QkQxICV/retrograde/sfx/SCPH-10000_00028.wav';
+  var CLICK_URL = 'https://file.garden/aBb6prPw8QkQxICV/retrograde/sfx/SCPH-10000_00023.wav'; // swap for your click sound
+  var HOVER_VOLUME = 0.5;
+  var CLICK_VOLUME = 0.6;
+  var NAV_DELAY = 500;
+  // ^^^ 1000 is one second)
+  var SELECTOR = 'header a, .header-links a, nav a, .menu a';
 
-  // Function to play hover sound
-  function playHoverSound() {
-    // Clone and play to allow overlapping sounds
-    const sound = hoverSound.cloneNode();
-    sound.volume = hoverSound.volume;
-    sound.play().catch(err => console.log('Audio play failed:', err));
+  var hoverSound = new Audio(HOVER_URL);
+  var clickSound = new Audio(CLICK_URL);
+  hoverSound.preload = 'auto';
+  clickSound.preload = 'auto';
+
+  function play(base, volume) {
+    var s = base.cloneNode();
+    s.volume = volume;
+    s.play().catch(function (err) { console.log('Audio play failed:', err); });
   }
 
-  // Function to add hover sound to links
+  function playHoverSound() {
+    play(hoverSound, HOVER_VOLUME);
+  }
+
+  // Hover: header.js calls this after it builds the header
   function addHoverSounds() {
-    // Get all links in header and throughout the page
-    const links = document.querySelectorAll('header a, .header-links a, nav a, .menu a');
-    
-    links.forEach(link => {
-      // Remove existing listener if any to avoid duplicates
+    document.querySelectorAll(SELECTOR).forEach(function (link) {
       link.removeEventListener('mouseenter', playHoverSound);
-      // Add hover sound effect
       link.addEventListener('mouseenter', playHoverSound);
     });
   }
 
-  // Run when DOM is ready
+  // Click: one listener on the whole page, so it works for links added later too
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest(SELECTOR);
+    if (!link) return;
+
+    play(clickSound, CLICK_VOLUME);
+
+    var href = link.getAttribute('href');
+    var opensElsewhere =
+      e.defaultPrevented ||
+      e.button !== 0 ||
+      e.ctrlKey || e.metaKey || e.shiftKey || e.altKey ||
+      link.target === '_blank' ||
+      !href || href.charAt(0) === '#';
+
+    if (opensElsewhere) return; // new tab, anchors, etc. don't need a delay
+
+    e.preventDefault();
+    setTimeout(function () {
+      window.location.href = link.href;
+    }, NAV_DELAY);
+  });
+
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', addHoverSounds);
   } else {
     addHoverSounds();
   }
 
-  // Also run when header is dynamically loaded (if using header.js)
-  // You can call this after header content is inserted
   window.initHoverSounds = addHoverSounds;
 })();
-// Hover sound effect for all links
-(function() {
-  // Create audio element
-  const hoverSound = new Audio('https://file.garden/aBb6prPw8QkQxICV/website/sound/HOVER.mp3');
-  hoverSound.volume = 0.5; // Adjust volume as needed (0.0 to 1.0)
-
-  // Function to play hover sound
-  function playHoverSound() {
-    // Clone and play to allow overlapping sounds
-    const sound = hoverSound.cloneNode();
-    sound.volume = hoverSound.volume;
-    sound.play().catch(err => console.log('Audio play failed:', err));
-  }
-
-  // Function to add hover sound to links
-  function addHoverSounds() {
-    // Get all links in header and throughout the page
-    const links = document.querySelectorAll('header a, .header-links a, nav a, .menu a');
-    
-    links.forEach(link => {
-      // Remove existing listener if any to avoid duplicates
-      link.removeEventListener('mouseenter', playHoverSound);
-      // Add hover sound effect
-      link.addEventListener('mouseenter', playHoverSound);
-    });
-  }
-
-  // Run when DOM is ready
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', addHoverSounds);
-  } else {
-    addHoverSounds();
-  }
-
-  // Also run when header is dynamically loaded (if using header.js)
-  // You can call this after header content is inserted
-  window.initHoverSounds = addHoverSounds;
-})();
+EOF

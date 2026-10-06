@@ -8,6 +8,7 @@ const headerHTML = `
     <h3><a href="/map.html">MAP</a></h3>
     <h3><a href="/characters.html">CHARACTERS</a></h3>
     <h3><a href="/gallery.html">GALLERY</a></h3>
+    <h3><a href="#" id="winamp-toggle" title="Music">♫</a></h3>
   </div>
 </header>
 `;
@@ -21,3 +22,7 @@ const fontLink = document.createElement('link');
 fontLink.rel = 'stylesheet';
 fontLink.href = 'https://use.typekit.net/zce6xzy.css';
 document.head.appendChild(fontLink);
+
+const winampScript = document.createElement('script');
+winampScript.src = '/style/winamp.js';
+document.body.appendChild(winampScript);

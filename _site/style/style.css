@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&family=Bebas+Neue&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wdth,wght@0,50..150,100..900;1,50..150,100..900&display=swap');
 
 @font-face {
   font-family: 'Eurostile';
@@ -49,7 +50,7 @@ b {
 body {
   margin: 0;
   background-color: var(--bg);
-  font-family: "IBM Plex Sans", monospace;
+  font-family: "IBM Plex Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
@@ -126,8 +127,11 @@ header {
 
 .header-links a {
   display: inline-block;
-  padding: 12px 24px;
-  font-family: 'Eurostile', sans-serif;
+  padding: 8px 24px;
+  height: 100%;
+  font-family: 'Anybody', sans-serif;
+  font-variation-settings:
+      "wdth" 125;
   font-size: 16px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -747,7 +751,6 @@ header {
   }
 }
 
-/* ---- Update box (index) ---- */
 .update-box {
   position: fixed;
   right: 20px;
@@ -806,4 +809,75 @@ header {
 
 .update-box li {
   margin: 0 0 4px;
+}
+
+/* ---- Age gate ---- */
+.age-gate {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(5, 5, 10, 0.97);
+}
+
+.age-gate-box {
+  max-width: 420px;
+  margin: 20px;
+  padding: 30px;
+  text-align: center;
+  border: 2px solid var(--blue);
+  background: #0b0b14;
+  color: #fff;
+}
+
+.age-gate-box h2 {
+  margin: 0 0 14px;
+  color: var(--blue);
+}
+
+.age-gate-box p {
+  margin: 0 0 24px;
+  line-height: 1.5;
+}
+
+.age-gate-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.age-gate-buttons button {
+  padding: 10px 18px;
+  font-family: 'Eurostile', sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  color: #fff;
+  background: var(--blue);
+  border: none;
+  border-radius: 4px;
+}
+
+.age-gate-buttons #age-leave {
+  background: #2a2a33;
+  color: #cfd8e3;
+}
+
+
+#winamp-container {
+  position: fixed !important;
+  transform-origin: top left;
+  top: 90px;
+  left: 20px;
+  width: 0;
+  height: 0;
+  z-index: 999999999 !important;
+}
+
+#webamp {
+  z-index: 999999999 !important;
+  transform: scale(1.2) !important;
+
 }
