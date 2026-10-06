@@ -1,10 +1,24 @@
 (function () {
   var TRACKS = [
-    { metaData: { artist: 'Artist', title: 'Song One' }, url: 'https://file.garden/YOURID/song1.mp3' },
-    { metaData: { artist: 'Artist', title: 'Song Two' }, url: 'https://file.garden/YOURID/song2.mp3' }
-  ];
+      {
+        metaData: { artist: 'Machine Girl', title: 'Black Glass' },
+        url: 'https://file.garden/aBb6prPw8QkQxICV/retrograde/music/winamp/Machine%20Girl%20-%20Black%20Glass%20%5BZJRarGVsRGQ%5D.mp3'
+      },
+      {
+        metaData: { artist: 'Cabaret Voltaire', title: "Sensoria" },
+        url: 'https://file.garden/aBb6prPw8QkQxICV/retrograde/music/winamp/Sensoria%20(12%27%27%20Version)%20(Remastered)%20%5Byxwq5bwFHYY%5D.mp3'
+      },
+      {
+        metaData: { artist: 'FEX', title: 'Subways Of Your Mind' },
+        url: 'https://file.garden/aBb6prPw8QkQxICV/retrograde/music/winamp/Subways%20Of%20Your%20Mind%20%5B9Q4qCkDwEvk%5D.mp3'
+      },
+      {
+        metaData: { artist: 'Steve Miller Band', title: 'Fly Like An Eagle' },
+        url: 'https://file.garden/aBb6prPw8QkQxICV/retrograde/music/winamp/Steve_Miller_-_Fly_Like_An_Eagle_%28mp3.pm%29.mp3'
+      }
+    ];
 
-  var SKIN = 'https://file.garden/aBb6prPw8QkQxICV/retrograde/music/winamp/3d_animo.wsz';
+  var SKIN = 'https://file.garden/aBb6prPw8QkQxICV/retrograde/music/winamp/Future_Shock.wsz';
 
   var webamp = null;
   var isOpen = false;

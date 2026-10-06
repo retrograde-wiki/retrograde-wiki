@@ -866,9 +866,10 @@ header {
 }
 
 
-/* ---- Webamp: always on top, below the header ---- */
+
 #winamp-container {
   position: fixed !important;
+  transform: scale(1.5);
   top: 90px;
   left: 20px;
   width: 0;
