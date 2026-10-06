@@ -1,6 +1,7 @@
 import markdownIt from "markdown-it";
 
 export default function (eleventyConfig) {
+  eleventyConfig.addWatchTarget("src/_includes/updates.md");
   eleventyConfig.addPassthroughCopy(
     "src/**/*.{html,js,css,png,jpg,jpeg,gif,webp,svg,ico,mp3,ogg,mp4,woff,woff2,ttf}"
   );
