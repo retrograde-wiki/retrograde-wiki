@@ -6,7 +6,8 @@
 .main-content h1  {
   margin-top: 20px !important;
   margin-bottom: 4px !important;
-  font-family: 'Butler';
+  font-family: 'Tomorrow';
+  text-transform: uppercase;
   font-size: 54px;
 }
 
@@ -38,15 +39,13 @@
   opacity: 0.7;
 }
 
-/* Country info section */
 .wiki-info {
   margin-bottom: 30px;
   text-align: center;
 }
 
-/* Country title styling */
 .country-title {
-  font-family: 'Butler';
+  font-family: 'Tomorrow';
   font-size: 48px;
   margin: 20px 0 10px 0;
   color: var(--charcolor);
@@ -64,7 +63,6 @@
   opacity: 0.6;
 }
 
-/* Info table - country stats */
 .info-table {
   background-color: var(--bg);
   border: 1px solid var(--border-color);
@@ -93,10 +91,10 @@ text-align: left;
 
 .info-value {
   flex: 1;
+  padding-left: 4px;
   color: var(--text-color);
 }
 
-/* Collapsible Table of contents using callout styling */
 .toc-container {
   margin: 30px 0;
 }
@@ -143,13 +141,12 @@ text-align: left;
   color: var(--charcolor);
 }
 
-/* Section styling */
 .section {
   margin: 40px 0;
 }
 
 .section h2 {
-  font-family: 'Butler';
+  font-family: 'Tomorrow';
   font-size: 32px;
   margin-bottom: 15px;
   padding-bottom: 8px;
@@ -168,7 +165,6 @@ text-align: left;
   line-height: 1.6;
 }
 
-/* Mobile responsiveness */
 @media (max-width: 768px) {
   .wiki-image {
     max-width: 250px;

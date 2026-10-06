@@ -1,4 +1,6 @@
 ---
+layout: lore.njk
+permalink: /about.html
 title: What is Retrograde?
 subtitle: Just the Basics.
 ---

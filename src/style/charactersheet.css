@@ -64,7 +64,6 @@ width: 60%;
 }
 .character-info h2 {
 margin-top: 0;
-font-size: ;
 padding-bottom: 0.5rem;
 text-align: center;
 font-size: 40px;
@@ -154,7 +153,6 @@ padding: 0.25rem 0;
 color: var(--charcolor)
 }
 .trivia-list {
-list-style-type: ;
 padding-left: 0;
 text-align: left;
 margin-top: 0.5rem;

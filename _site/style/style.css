@@ -1,3 +1,4 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&family=Bebas+Neue&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wdth,wght@0,50..150,100..900;1,50..150,100..900&display=swap');
 
@@ -127,7 +128,7 @@ header {
 
 .header-links a {
   display: inline-block;
-  padding: 8px 24px;
+  padding: 8px 20px;
   height: 100%;
   font-family: 'Anybody', sans-serif;
   font-variation-settings:
@@ -508,9 +509,10 @@ header {
 }
 
 .lore-title {
-  font-family: 'Bebas Neue';
+  font-family: 'Anybody';
   font-size: clamp(44px, 7vw, 64px);
   line-height: 1;
+  text-transform: uppercase;
   color: var(--text-color);
   margin: 0 0 14px 0;
 }
@@ -763,7 +765,7 @@ header {
   background: rgba(10, 10, 20, 0.92);
   border: 2px solid var(--blue);
   color: var(--blue);
-  font-size: 12px;
+  font-size: 16px;
   letter-spacing: 1px;
   line-height: 1.5;
   z-index: 50;
@@ -811,7 +813,6 @@ header {
   margin: 0 0 4px;
 }
 
-/* ---- Age gate ---- */
 .age-gate {
   position: fixed;
   inset: 0;
@@ -879,4 +880,140 @@ header {
 
 #webamp {
   z-index: 2147483647 !important;
+}
+
+.header-links a.current {
+  outline: 2px solid var(--blue);
+}
+
+/* ---- Contents in the sidebar ---- */
+.infobox-toc {
+  padding: 15px;
+  border-top: 1px solid var(--border-color);
+}
+
+.infobox-toc .toc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.infobox-toc .toc-header h3 {
+  margin: 0;
+  padding-bottom: 0 !important;
+}
+
+.infobox-toc .toc-list {
+  margin: 10px 0 0;
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* ---- Gallery: 3 per row, wraps, fits any page ---- */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+/* markdown wraps images in <p> and adds <br>, so flatten those */
+.gallery p { display: contents; margin: 0; }
+.gallery br { display: none; }
+
+/* optional: show whole images instead of cropping to squares */
+.gallery.uncropped img { aspect-ratio: auto; object-fit: contain; }
+
+@media (max-width: 600px) {
+  .gallery { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ---- Gallery hover + lightbox ---- */
+.gallery img {
+  position: relative;
+  cursor: zoom-in;
+  transition: transform 0.2s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.06);
+  z-index: 2;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.9);
+  cursor: zoom-out;
+}
+
+.lightbox img {
+  max-width: 92vw;
+  max-height: 92vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+/* ---- Gallery images with a source link ---- */
+.gallery-item {
+  position: relative;
+  margin: 0;
+  transition: transform 0.2s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.06);
+  z-index: 2;
+}
+
+/* the whole figure grows, so the icon grows with the image */
+.gallery-item img:hover {
+  transform: none;
+}
+
+.gallery-source {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.65);
+  border-radius: 50%;
+  opacity: 0.8;
+  transition: opacity 0.2s ease, background 0.2s ease;
+}
+
+.gallery-source:hover {
+  opacity: 1;
+  color: #fff;
+  background: var(--blue);
+}
+
+/* keep the source icon above the image on hover */
+.gallery-item img:hover {
+  z-index: auto;
+}
+
+.gallery-source {
+  z-index: 5;
 }

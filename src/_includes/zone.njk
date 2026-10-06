@@ -31,20 +31,13 @@
       <!-- Main Content Area -->
       <div class="wiki-main">
         <h1 class="country-title">{{ name }}</h1>
-        {% if art %}<img src="{{ art }}" alt="{{ name }}" class="zone-art">{% endif %}
         {% if subtitle or pronunciation %}
         <p class="country-subtitle">{{ subtitle }}
           {% if pronunciation %}<span class="pronunciation">{{ pronunciation }}</span>{% endif %}
         </p>
         {% endif %}
 
-        <div class="callout toc-container">
-          <div class="toc-header" onclick="toggleTOC()">
-            <h3>Contents</h3>
-            <span class="toc-toggle" id="toc-toggle">[hide]</span>
-          </div>
-          <ol class="toc-list" id="toc-content" role="list"></ol>
-        </div>
+        {% if art %}<img src="{{ art }}" alt="{{ name }}" class="zone-art">{% endif %}
 
         <div class="zone-body">
           {{ content | safe }}
@@ -72,6 +65,14 @@
           {% if currency %}<div class="infobox-row"><div class="infobox-label">Currency:</div><div class="infobox-value">{{ currency }}</div></div>{% endif %}
           {% if languages %}<div class="infobox-row"><div class="infobox-label">Languages:</div><div class="infobox-value">{{ languages }}</div></div>{% endif %}
           {% for row in infobox %}<div class="infobox-row"><div class="infobox-label">{{ row.label }}:</div><div class="infobox-value">{{ row.value }}</div></div>{% endfor %}
+        </div>
+
+        <div class="infobox-toc">
+          <div class="toc-header" onclick="toggleTOC()">
+            <h3>Contents</h3>
+            <span class="toc-toggle" id="toc-toggle">[show]</span>
+          </div>
+          <ol class="toc-list" id="toc-content" role="list" style="display:none;"></ol>
         </div>
       </aside>
     </div>

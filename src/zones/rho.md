@@ -1,5 +1,6 @@
 ---
 name: Rho
+art: /im/art/rho.png
 arc: red
 demonym: Rhoan
 population: Large
@@ -17,6 +18,15 @@ infobox:
   - label: Climate
     value: Arid, Dry
 ---
+
+<div class="gallery">
+<img src="/im/art/rho.png" alt="">
+<figure class="gallery-item">
+<img src="/im/art/rho.png" alt="">
+<a class="gallery-source" href="https://example.com/original" target="_blank" rel="noopener" title="Source"><i class="fa-solid fa-link"></i></a>
+</figure>
+<img src="/im/art/rho.png" alt="">
+</div>
 
 ## OVERVIEW
 

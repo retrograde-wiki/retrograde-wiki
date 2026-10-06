@@ -1,8 +1,8 @@
 (function () {
   var HOVER_URL = 'https://file.garden/aBb6prPw8QkQxICV/retrograde/sfx/SCPH-10000_00028.wav';
   var CLICK_URL = 'https://file.garden/aBb6prPw8QkQxICV/retrograde/sfx/SCPH-10000_00023.wav'; // swap for your click sound
-  var HOVER_VOLUME = 0.5;
-  var CLICK_VOLUME = 0.6;
+  var HOVER_VOLUME = 0.1;
+  var CLICK_VOLUME = 0.1;
   var NAV_DELAY = 500;
   // ^^^ 1000 is one second)
   var SELECTOR = 'header a, .header-links a, nav a, .menu a';
@@ -22,7 +22,6 @@
     play(hoverSound, HOVER_VOLUME);
   }
 
-  // Hover: header.js calls this after it builds the header
   function addHoverSounds() {
     document.querySelectorAll(SELECTOR).forEach(function (link) {
       link.removeEventListener('mouseenter', playHoverSound);
@@ -30,7 +29,6 @@
     });
   }
 
-  // Click: one listener on the whole page, so it works for links added later too
   document.addEventListener('click', function (e) {
     var link = e.target.closest(SELECTOR);
     if (!link) return;
@@ -45,8 +43,7 @@
       link.target === '_blank' ||
       !href || href.charAt(0) === '#';
 
-    if (opensElsewhere) return; // new tab, anchors, etc. don't need a delay
-
+    if (opensElsewhere) return;
     e.preventDefault();
     setTimeout(function () {
       window.location.href = link.href;
