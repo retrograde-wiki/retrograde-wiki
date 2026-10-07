@@ -1141,11 +1141,9 @@ header {
   color: color-mix(in srgb, var(--text) 60%, transparent);
 }
 
-/* masonry: keeps each image's shape, any count */
 .art-grid.masonry { column-width: 260px; column-gap: 12px; }
 .art-grid.masonry .art-item { break-inside: avoid; margin-bottom: 12px; }
 
-/* square: cropped thumbnails */
 .art-grid.square {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -1153,7 +1151,6 @@ header {
 }
 .art-grid.square .art-item img { aspect-ratio: 1 / 1; object-fit: cover; }
 
-/* contain: logos and flags, whole image on a panel */
 .art-grid.contain {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -1167,7 +1164,6 @@ header {
   background: color-mix(in srgb, var(--text) 5%, transparent);
 }
 
-/* source link icon */
 .art-source {
   position: absolute;
   top: 6px;
@@ -1187,7 +1183,6 @@ header {
 }
 .art-source:hover { opacity: 1; color: var(--text); background: var(--blue); }
 
-/* landing page cards */
 .art-cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -1217,14 +1212,19 @@ header {
   padding: 14px;
   background: linear-gradient(transparent, color-mix(in srgb, var(--overlay) 85%, transparent));
 }
-.art-card-title { font-family: 'OPTIDanley-Medium'; font-size: 26px; color: var(--text); }
-.art-card-count { font-size: 14px; color: color-mix(in srgb, var(--text) 70%, transparent); }
+.art-card-title {
+font-family: 'Tomorrow';
+font-size: 26px; color: var(--white);
+}
+.art-card-count {
+font-size: 14px;
+color: var(--white);
+}
 
 @media (max-width: 768px) {
   .art-page { padding: 20px; margin-top: 100px; }
 }
 
-/* ---- Header music player ---- */
 .header-player {
   display: flex;
   align-items: center;
@@ -1279,7 +1279,6 @@ header {
   to { transform: translateX(-100%); }
 }
 
-/* invisible native menu laid over the title */
 .hp-select {
   position: absolute;
   inset: 0;
@@ -1293,9 +1292,6 @@ header {
   .hp-marquee { width: 120px; }
 }
 
-/* ---- Themes (override the accent colors; page backgrounds are left alone) ---- */
-
-/* ---- Theme button ---- */
 .hp-theme {
   position: relative;
   width: 32px;
@@ -1305,5 +1301,4 @@ header {
 .hp-theme .hp-btn { pointer-events: none; }
 .hp-theme:hover .hp-btn { background: var(--bg2); color: var(--text); }
 
-/* ---- Theme button position ---- */
 .hp-theme { margin-left: 0; }

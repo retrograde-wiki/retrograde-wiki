@@ -1,41 +1,24 @@
-/* ============================================================
-   THEMES
-   Every theme block must define the same variables.
-   To add a theme: copy a block, change the id and the values,
-   then add one line to THEMES in header.js.
 
-   Core
-     --bg / --bg2         page background / secondary background
-     --text / --text-dim  main text / muted text
-     --line               borders and dividers
-     --panel / --panel2   buttons and cards / lighter panel color
-     --surface            translucent panel behind text (callouts, infobox)
-     --overlay            dark backdrop color (lightbox, tooltips, fades)
-     --accent / --accent2 / --accent3   highlight colors
-     --on-accent          text that sits on top of an accent color
-   Arc colors (zone and character pages)
-     --grey ... --purple  the color itself
-     --bg-*               dark/pale page background for that arc
-     --hl-*               hover/highlight text for that arc
-   ============================================================ */
-
-/* ---------- DARK 1 (default) ---------- */
 :root,
+
+/* Self note: the theme changer is on the header. */
+
 [data-theme="dark-1"] {
-  --bg: #0c0b0f;
+  --bg: #0c0b0f; /* Page backgroundss */
   --bg2: #111923;
   --text: #f0f5fa;
   --text-dim: #607285;
   --line: #3a3a44;
-  --panel: #1f1f26;
+  --panel: #1f1f26; /* Buttons/panels */
   --panel2: #8b949e;
-  --surface: rgba(6, 6, 8, 0.5);
-  --overlay: #000000;
-  --accent: #ed5365;
-  --accent2: #62b1ed;
+  --surface: rgba(6, 6, 8, 0.5); /* Transrulance */
+  --overlay: #000000;  /* Tooltips/accessability stuff dont touch */
+  --accent: #2f54eb;
+  --accent2: #ed5365;
   --accent3: #ffd324;
-  --on-accent: #ffffff;
+  --on-accent: #ffffff;  /* text that sits on an accent */
 
+  --white: #ffffff;
   --grey: #84848a;
   --red: #ea2f2f;
   --orange: #ff8b07;
@@ -44,6 +27,7 @@
   --blue: #3b41ec;
   --teal: #3cd5dd;
   --purple: #6325d6;
+  --black: #0c0b0f;
 
   --bg-grey: #0c0b0f;
   --bg-red: #210c0c;
@@ -64,7 +48,52 @@
   --hl-purple: #e4c7f0;
 }
 
-/* ---------- LIGHT 1 ---------- */
+[data-theme="dark-2"] {
+  --bg: #11100e;
+  --bg2: #191714;
+  --text: #f1eadc;
+  --text-dim: #8d8679;
+  --line: #4a453d;
+  --panel: #25221d;
+  --panel2: #746d60;
+  --surface: rgba(17, 16, 14, 0.6);
+  --overlay: #080706;
+
+  --accent: #e4543b;
+  --accent2: #42a9b5;
+  --accent3: #e0b83f;
+  --on-accent: #ffffff;
+
+  --white: #ffffff;
+  --grey: #817c74;
+  --red: #e23b32;
+  --orange: #e87524;
+  --yellow: #e0b83f;
+  --green: #4caa50;
+  --blue: #397bc4;
+  --teal: #42b8bd;
+  --purple: #7655b8;
+  --black: #11100e;
+
+  --bg-grey: #11100e;
+  --bg-red: #26110e;
+  --bg-orange: #26170d;
+  --bg-yellow: #28220e;
+  --bg-green: #102015;
+  --bg-blue: #101a25;
+  --bg-teal: #102326;
+  --bg-purple: #191326;
+
+  --hl-grey: #c9c2b8;
+  --hl-red: #f5d3cd;
+  --hl-orange: #f5dfcf;
+  --hl-yellow: #f4ebca;
+  --hl-green: #d5ead5;
+  --hl-teal: #d0e9e9;
+  --hl-blue: #d1def0;
+  --hl-purple: #dfd4ed;
+}
+
 [data-theme="light-1"] {
   --bg: #eceef2;
   --bg2: #e4e8ee;
@@ -75,11 +104,12 @@
   --panel2: #5b6674;
   --surface: rgba(255, 255, 255, 0.6);
   --overlay: #16181d;
-  --accent: #c93448;
-  --accent2: #2a7fc4;
+  --accent: #2a7fc4;
+  --accent2: #c93448;
   --accent3: #b8900a;
   --on-accent: #ffffff;
 
+  --white: #ffffff;
   --grey: #6b6b72;
   --red: #d42a2a;
   --orange: #e07400;
@@ -88,6 +118,7 @@
   --blue: #3b41ec;
   --teal: #11949c;
   --purple: #6325d6;
+  --black: #0c0b0f;
 
   --bg-grey: #eceef2;
   --bg-red: #f7e3e3;
@@ -108,7 +139,52 @@
   --hl-purple: #4a1aa8;
 }
 
-/* old variable names still used in the CSS point at the new ones */
+[data-theme="light-2"] {
+  --bg: #eee9dc;
+  --bg2: #e3ddce;
+  --text: #171716;
+  --text-dim: #68645c;
+  --line: #aaa398;
+  --panel: #d8d1c2;
+  --panel2: #6d675e;
+  --surface: rgba(255, 252, 241, 0.65);
+  --overlay: #171716;
+
+  --accent: #c83d32;
+  --accent2: #287f91;
+  --accent3: #b18419;
+  --on-accent: #ffffff;
+
+  --white: #ffffff;
+  --grey: #77736c;
+  --red: #c72f2c;
+  --orange: #d8661c;
+  --yellow: #a8780d;
+  --green: #397d35;
+  --blue: #3656b5;
+  --teal: #167f8c;
+  --purple: #65429c;
+  --black: #171716;
+
+  --bg-grey: #eee9dc;
+  --bg-red: #f3deda;
+  --bg-orange: #f3e4d7;
+  --bg-yellow: #f2ead0;
+  --bg-green: #dfeada;
+  --bg-teal: #d8ebeb;
+  --bg-blue: #dce2f1;
+  --bg-purple: #e6dff0;
+
+  --hl-grey: #53504a;
+  --hl-red: #a62624;
+  --hl-orange: #a94e14;
+  --hl-yellow: #795900;
+  --hl-green: #286524;
+  --hl-teal: #126a75;
+  --hl-blue: #293f8d;
+  --hl-purple: #51337f;
+}
+
 :root {
   --text-color: var(--text);
   --border-color: var(--line);

@@ -100,11 +100,13 @@ const playerScript = document.createElement('script');
 playerScript.src = '/style/player.js';
 document.body.appendChild(playerScript);
 
-// Theme picker (ids match the blocks in themes.css)
+// CHANGE THEMES HEREE VVVV
 (function () {
   var THEMES = [
-    { id: 'dark-1',  name: 'Dark 1' },
-    { id: 'light-1', name: 'Light 1' }
+    { id: 'dark-1',  name: 'Classic Dark' },
+    { id: 'dark-2', name: 'Retro Dark' },
+    { id: 'light-1', name: 'Classic Dark' },
+    { id: 'light-2', name: 'Retro Light' }
   ];
   var KEY = 'retrograde-theme';
   var root = document.documentElement;
