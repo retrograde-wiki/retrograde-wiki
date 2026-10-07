@@ -8,6 +8,8 @@ eleventyExcludeFromCollections: true
 
 <ul>
 {% for item in collections.lore %}
+  {% if not item.data.hidden %}
   <li><a href="{{ item.url }}">{{ item.data.title }}</a>{% if item.data.subtitle %} – {{ item.data.subtitle }}{% endif %}</li>
+  {% endif %}
 {% endfor %}
 </ul>

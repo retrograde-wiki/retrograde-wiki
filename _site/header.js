@@ -42,7 +42,6 @@ document.body.appendChild(winampScript);
   });
 })();
 
-// Outline the button for the current page/section (exact match wins)
 (function () {
   var path = location.pathname.replace(/index\.html$/, '');
   var links = Array.from(document.querySelectorAll('.header-links a')).filter(function (a) {
@@ -67,7 +66,6 @@ document.body.appendChild(winampScript);
   });
 })();
 
-// Gallery lightbox: click an image to see it full size
 document.addEventListener('click', function (e) {
   var img = e.target.closest('.gallery img');
   if (!img) return;

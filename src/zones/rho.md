@@ -19,18 +19,11 @@ infobox:
     value: Arid, Dry
 ---
 
-<div class="gallery">
-<img src="/im/art/rho.png" alt="">
-<figure class="gallery-item">
-<img src="/im/art/rho.png" alt="">
-<a class="gallery-source" href="https://example.com/original" target="_blank" rel="noopener" title="Source"><i class="fa-solid fa-link"></i></a>
-</figure>
-<img src="/im/art/rho.png" alt="">
-</div>
 
 ## OVERVIEW
 
 Rho is a sparsely populated Zone dominated by a large water industry controlled by its monolith AquaFlo. Much of the Zone consists of dry plains, red sandstone, and deep canyons. Most settlements are small and separated by long stretches of undeveloped land.
+
 
 ## GEOGRAPHY & INFRASTRUCTURE
 

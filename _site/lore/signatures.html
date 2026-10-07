@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <link rel="stylesheet" href="/style/style.css">
+  <link rel="stylesheet" href="/style/root.css">
+  <link rel="icon" href="https://file.garden/aBb6prPw8QkQxICV/website/placeholder/Logo" />
+  <script src="/style/hover.js"></script>
+  <title>RETROGRADE - SIGNATURES</title>
+</head>
+
+<body>
+  <div id="header-placeholder"></div>
+  <script src="/header.js"></script>
+
+  <div class="lore-container">
+    <div class="lore-header">
+      <h1 class="lore-title">SIGNATURES</h1>
+      <p class="intro-subtitle">Magic System, Weapons</p>
+      
+    </div>
+
+    
+    <div class="lore-toc">
+      <div class="lore-toc-header" onclick="toggleLoreTOC()">
+        <span class="lore-toc-title">Contents</span>
+        <span class="lore-toc-toggle" id="lore-toc-toggle">[hide]</span>
+      </div>
+      <ol class="lore-toc-list" id="lore-toc-list"></ol>
+    </div>
+    
+
+    <div class="lore-section">
+      <p><em>page needs lore update before launch cause signatures arent hidden anymore. if i forgot this im gonna lose it</em></p>
+<h1>SIGNATURES</h1>
+<p><strong>Signatures</strong> are extremely rare, intelligent entities that take the form of unusual weapons. They possess powerful abilities and can form a permanent bond with a human known as a <strong>Signer</strong>.</p>
+<p>The true origin of Signatures is unknown to modern society. They are commonly regarded as urban legends, with most people having never encountered a genuine Signature or Signer.</p>
+<h2>ORIGIN</h2>
+<aside>
+<img src="/icons/book-closed_blue.svg" alt="/icons/book-closed_blue.svg" width="40px" />
+<p>This is Nerd stuff for flavor, not necessary to know.</p>
+</aside>
+<p>Signatures originated during the early centuries of human settlement on Zenith.</p>
+<p>Ancient human factions discovered a number of extraordinarily powerful creatures native to Zenith, now collectively referred to as <strong>Beasts</strong>. Each Beast possessed a highly energetic <strong>core</strong> within its body. Removing the core killed the creature.</p>
+<p>During the wars between early human factions, researchers discovered that these cores could be extracted and stabilized into powerful weapons. The resulting weapons became the first Signatures.</p>
+<p>The people who developed them did not understand that the cores retained a form of intelligence. As the civilizations responsible for their creation disappeared or reorganized after the wars, knowledge of how to create new Signatures was gradually lost.</p>
+<p>All known Beasts are now extinct, meaning no new Signature cores can be obtained.</p>
+<p>Many of the Signatures created during this period were subsequently lost, destroyed, or abandoned. The surviving Signatures are scattered throughout Zenith and are rarely encountered.</p>
+<h2>THE BOND</h2>
+<p>A Signature will only allow itself to be wielded by a compatible person. This compatibility is not fully understood and appears to depend on a combination of personality, experiences, values, temperament, and other factors that have not been identified.</p>
+<p>Once bonded, the human becomes a <strong>Signer</strong>.</p>
+<p>A Signature normally refuses to function for anyone other than its Signer. Some may actively resist attempts to use them, such as becoming unusually heavy or changing their physical configuration.</p>
+<p>The bond also causes the Signature to gradually change. Its appearance may subtly adapt to its Signer, with more significant changes developing over the course of a long-term relationship.</p>
+<h2>ABILITIES</h2>
+<p>Each Signature possesses its own distinct ability or family of related abilities. These abilities can usually be applied in several different ways, although their full potential is not immediately apparent to a new Signer.</p>
+<p>New Signers generally understand a Signature's most obvious functions first. More advanced applications require experimentation, practice, and a growing understanding of the Signature itself.</p>
+<p>Signers also possess physical abilities beyond those of ordinary humans. Strength, speed, endurance, and resilience are enhanced through the bond, with the effects becoming more pronounced when actively using a Signature.</p>
+<h2>DISTORTION</h2>
+<p>A <strong>Distortion</strong> occurs when the bond between a Signer and their Signature becomes severely destabilized.</p>
+<p>Living Signers can temporarily enter a Distortion state during extreme emotional distress. Fear, grief, rage, guilt, despair, and other forms of emotional overload can cause the Signature to merge progressively with its Signer.</p>
+<p>The transformation occurs gradually. Early stages may be reversible, while later stages become increasingly difficult to recover from. As the process advances, the Signer gradually loses control of their body and actions.</p>
+<p>Death can also result in a Distortion under certain circumstances. A Signer who dies peacefully, such as from illness or old age, will generally leave their Signature unbound, allowing it to eventually choose another compatible person.</p>
+<p>Violent death or death accompanied by intense unresolved attachment may instead cause the Signature to attempt to preserve its bond. In these cases, a complete Distortion may form.</p>
+<p>A complete Distortion is a new creature rather than a transformed surviving Signer. The original person's consciousness is lost, and the resulting creature possesses a unique appearance and behavior determined by the Signature and its former bond.</p>
+<h2>MODERN SIGNATURES</h2>
+<p>Very few active Signers exist across Zenith, and most deliberately conceal their identities. The existence of Signatures is widely known as a rumor, but genuine evidence is rare.</p>
+<p>Signers may attract unwanted attention from Monoliths, researchers, criminals, Fixers, or other interested parties if their Signature becomes known.</p>
+<p>As a result, most Signers live ordinary lives while keeping their abilities hidden.</p>
+
+    </div>
+  </div>
+
+  <script>
+    var list = document.getElementById('lore-toc-list');
+    var used = {};
+    document.querySelectorAll('.lore-section h2').forEach(function (h) {
+      var id = h.id || h.textContent.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+      if (used[id]) { used[id]++; id = id + '-' + used[id]; } else { used[id] = 1; }
+      h.id = id;
+      var li = document.createElement('li');
+      var a = document.createElement('a');
+      a.href = '#' + id;
+      a.textContent = h.textContent;
+      li.appendChild(a);
+      list.appendChild(li);
+    });
+
+    function toggleLoreTOC() {
+      var toggle = document.getElementById('lore-toc-toggle');
+      var hidden = list.style.display === 'none';
+      list.style.display = hidden ? 'block' : 'none';
+      toggle.textContent = hidden ? '[hide]' : '[show]';
+    }
+  </script>
+  
+</body>
+</html>

@@ -1,6 +1,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&family=Bebas+Neue&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wdth,wght@0,50..150,100..900;1,50..150,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @font-face {
   font-family: 'Eurostile';
@@ -144,7 +145,7 @@ header {
 }
 
 .header-links a:hover {
-  background-color: var(--blue);
+  background-color: var(--accent);
   color: var(--text-color);
 }
 
@@ -162,7 +163,7 @@ header {
   font-size: 22px;
   font-weight: 900;
   letter-spacing: 2px;
-  color: var(--blue);
+  color: var(--charcolor);
 }
 
 .home-logo img {
@@ -183,26 +184,6 @@ header {
   height: auto;
   display: block;
   margin: -20% auto -28%;
-}
-
-.about-link:hover {
-  color: var(--red);
-}
-
-.map-link:hover {
-  color: var(--orange);
-}
-
-.factions-link:hover {
-  color: var(--yellow);
-}
-
-.characters-link:hover {
-  color: var(--green);
-}
-
-.explore-link:hover {
-  color: var(--blue);
 }
 
 .main-width {
@@ -419,7 +400,7 @@ header {
 }
 
 .infobox-header {
-  background-color: var(--bg);
+  background-color: var(--charcolor);
   padding: 15px;
   text-align: center;
   border-bottom: 1px solid var(--border-color);
@@ -495,7 +476,7 @@ header {
 
 .lore-container {
   max-width: 780px;
-  margin: 60px auto;
+  margin: 100px auto;
   padding: 40px;
 }
 
@@ -509,22 +490,29 @@ header {
 }
 
 .lore-title {
-  font-family: 'Anybody';
-  font-size: clamp(44px, 7vw, 64px);
-  line-height: 1;
+  font-family: 'Bebas Neue';
+  font-size: 150px;
+  line-height: 0.85;
   text-transform: uppercase;
   color: var(--text-color);
-  margin: 0 0 14px 0;
+  margin: 0 0 16px 0;
 }
 
 .intro-subtitle {
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 500;
   color: var(--text-dim);
   margin: 0;
-  letter-spacing: 0.12em;
   text-transform: uppercase;
 }
+
+.lore-updated {
+  margin: 10px 0 0;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: var(--accent);
+}
+
 
 .lore-section {
   margin: 50px 0;
@@ -533,7 +521,7 @@ header {
 
 .lore-section p,
 .lore-section li {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
   word-spacing: normal;
   letter-spacing: 0;
@@ -731,11 +719,6 @@ header {
     height: 50px;
   }
 
-  .lore-container {
-    padding: 20px;
-    margin-top: 100px;
-  }
-
   .lore-section h1 {
     font-size: 50px;
   }
@@ -757,20 +740,20 @@ header {
   position: fixed;
   right: 20px;
   bottom: 20px;
-  width: 270px;
+  width: 350px;
   height: 190px;
   overflow-y: auto;
   box-sizing: border-box;
   padding: 14px 14px 6px;
   background: rgba(10, 10, 20, 0.92);
-  border: 2px solid var(--blue);
-  color: var(--blue);
+  border: 2px solid var(--accent);
+  color: var(--accent);
   font-size: 16px;
   letter-spacing: 1px;
   line-height: 1.5;
   z-index: 50;
   scrollbar-width: thin;
-  scrollbar-color: var(--blue) transparent;
+  scrollbar-color: var(--accent) transparent;
 }
 
 .update-box .update-date {
@@ -796,7 +779,7 @@ header {
 
 .update-box h1 {
   font-family: inherit;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 600;
   letter-spacing: 3px;
   margin: 0 0 4px;
@@ -811,6 +794,7 @@ header {
 
 .update-box li {
   margin: 0 0 4px;
+  font-size: 14px;
 }
 
 .age-gate {
@@ -828,14 +812,14 @@ header {
   margin: 20px;
   padding: 30px;
   text-align: center;
-  border: 2px solid var(--blue);
+  border: 2px solid var(--accent);
   background: #0b0b14;
   color: #fff;
 }
 
 .age-gate-box h2 {
   margin: 0 0 14px;
-  color: var(--blue);
+  color: var(--accent);
 }
 
 .age-gate-box p {
@@ -856,7 +840,7 @@ header {
   letter-spacing: 1px;
   cursor: pointer;
   color: #fff;
-  background: var(--blue);
+  background: var(--accent);
   border: none;
   border-radius: 4px;
 }
@@ -865,7 +849,6 @@ header {
   background: #2a2a33;
   color: #cfd8e3;
 }
-
 
 
 #winamp-container {
@@ -883,10 +866,9 @@ header {
 }
 
 .header-links a.current {
-  outline: 2px solid var(--blue);
+  outline: 2px solid var(--accent);
 }
 
-/* ---- Contents in the sidebar ---- */
 .infobox-toc {
   padding: 15px;
   border-top: 1px solid var(--border-color);
@@ -911,7 +893,6 @@ header {
   line-height: 1.6;
 }
 
-/* ---- Gallery: 3 per row, wraps, fits any page ---- */
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -927,18 +908,15 @@ header {
   object-fit: cover;
 }
 
-/* markdown wraps images in <p> and adds <br>, so flatten those */
 .gallery p { display: contents; margin: 0; }
 .gallery br { display: none; }
 
-/* optional: show whole images instead of cropping to squares */
 .gallery.uncropped img { aspect-ratio: auto; object-fit: contain; }
 
 @media (max-width: 600px) {
   .gallery { grid-template-columns: repeat(2, 1fr); }
 }
 
-/* ---- Gallery hover + lightbox ---- */
 .gallery img {
   position: relative;
   cursor: zoom-in;
@@ -969,7 +947,6 @@ header {
   object-fit: contain;
 }
 
-/* ---- Gallery images with a source link ---- */
 .gallery-item {
   position: relative;
   margin: 0;
@@ -981,7 +958,6 @@ header {
   z-index: 2;
 }
 
-/* the whole figure grows, so the icon grows with the image */
 .gallery-item img:hover {
   transform: none;
 }
@@ -1006,14 +982,137 @@ header {
 .gallery-source:hover {
   opacity: 1;
   color: #fff;
-  background: var(--blue);
+  background: var(--accent);
 }
 
-/* keep the source icon above the image on hover */
 .gallery-item img:hover {
   z-index: auto;
 }
 
 .gallery-source {
   z-index: 5;
+}
+
+
+
+.continent-section {
+ max-width: 900px;
+ margin: 40px auto;
+ padding: 20px;
+}
+
+.continent-title {
+ color: white;
+ font-size: 2em;
+ margin-bottom: 30px;
+}
+
+.navpage-item {
+ display: flex;
+ gap: 20px;
+ margin-bottom: 40px;
+
+}
+
+.navpage-image {
+ width: 200px;
+ height: 120px;
+ background: #444;
+ flex-shrink: 0;
+ overflow: hidden;
+
+}
+
+.navpage-image img {
+
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ display: block;
+}
+
+.navpage-content h3 {
+ color: white;
+ font-size: 1.5em;
+ margin: 0 0 10px 0;
+ text-transform: uppercase;
+}
+
+.navpage-content p {
+ color: #ccc;
+ line-height: 1.6;
+ margin: 0;
+}
+ .map-container {
+ text-align: center;
+ margin: 80px auto 20px auto;
+ max-width: 900px;
+ padding: 0 1rem;
+}
+
+.map-buttons {
+ display: flex;
+ gap: 0.5rem;
+ margin-bottom: 1.5rem;
+ justify-content: center;
+ flex-wrap: wrap;
+}
+
+.map-buttons button {
+ padding: 0.5rem 1rem;
+ background: rgba(255,255,255,0.1);
+ color: white;
+ cursor: pointer;
+ border-radius: 3px;
+ transition: all 0.3s ease;
+ border: none;
+ font-size: 0.8rem;
+ font-family: "obviously", sans-serif;
+}
+
+.map-buttons button:hover {
+ transform: scale(1.05);
+}
+
+.map-buttons button.active {
+ background: var(--grey);
+ transform: scale(1.08);
+}
+
+.map-image {
+ width: 100%;
+ max-width: 1000px;
+ height: auto;
+ border: 2px solid var(--text-dim);
+}
+
+.lore-toc {
+  background-color: rgba(6, 6, 8, 0.5);
+  border-left: 4px solid var(--accent);
+  padding: 1rem 1.5rem;
+  margin: 0 0 40px;
+  border-radius: 4px;
+}
+
+.lore-toc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.lore-toc-title {
+  font-size: 25px;
+  color: var(--charcolor, var(--accent);
+}
+
+.lore-toc-toggle {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.lore-toc-list {
+  margin: 10px 0 0;
+  padding-left: 24px;
+  line-height: 1.7;
 }
