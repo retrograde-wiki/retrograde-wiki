@@ -1,0 +1,20 @@
+---
+layout: gallerypage.njk
+title: Gallery
+subtitle: Art, logos, flags and more
+permalink: /gallery.html
+---
+
+<div class="art-cards">
+{% for item in collections.gallery | sort(attribute="data.order") %}
+  {% if not item.data.hidden %}
+  <a class="art-card" href="{{ item.url }}">
+    <img src="{{ item.data.cover or item.data.images[0].src }}" alt="" loading="lazy">
+    <div class="art-card-text">
+      <div class="art-card-title">{{ item.data.title }}</div>
+      <div class="art-card-count">{{ item.data.images | length }} images</div>
+    </div>
+  </a>
+  {% endif %}
+{% endfor %}
+</div>

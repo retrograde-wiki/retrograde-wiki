@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="/style/style.css">
+  <link rel="stylesheet" href="/style/root.css">
+  <link rel="icon" href="/im/favicon.png" />
+  <script src="/style/hover.js"></script>
+  <title>RETROGRADE - {{ title | upper }}</title>
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <script src="/header.js"></script>
+
+  <div class="art-page">
+    <div class="lore-header">
+      <h1 class="lore-title">{{ title }}</h1>
+      {% if subtitle %}<p class="intro-subtitle">{{ subtitle }}</p>{% endif %}
+    </div>
+
+    {{ content | safe }}
+
+    {% if images %}
+    <div class="art-grid {{ style or 'masonry' }}">
+      {% for img in images %}
+      <figure class="art-item">
+        <img src="{{ img.thumb or img.src }}" data-full="{{ img.src }}" alt="{{ img.title or '' }}" loading="lazy">
+        {% if img.source %}<a class="art-source" href="{{ img.source }}" target="_blank" rel="noopener" title="Source"><i class="fa-solid fa-link"></i></a>{% endif %}
+        {% if img.title %}<figcaption class="art-caption">{{ img.title }}</figcaption>{% endif %}
+      </figure>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</body>
+</html>

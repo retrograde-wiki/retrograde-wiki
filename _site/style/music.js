@@ -1,4 +1,3 @@
-// music-player.js - Universal music player for all pages
 (function() {
     'use strict';
 

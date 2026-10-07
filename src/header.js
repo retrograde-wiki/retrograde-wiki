@@ -1,6 +1,14 @@
 const headerHTML = `
 <header>
-  <a href="/index.html" class="home-logo">RETROGRADE</a>
+  <div class="header-player" id="header-player">
+    <button class="hp-btn" id="hp-prev" title="Previous"><i class="fa-solid fa-backward-step"></i></button>
+    <button class="hp-btn" id="hp-play" title="Play / Pause"><i class="fa-solid fa-play"></i></button>
+    <button class="hp-btn" id="hp-next" title="Next"><i class="fa-solid fa-forward-step"></i></button>
+    <div class="hp-marquee">
+      <div class="hp-title">Pick a song...</div>
+      <select class="hp-select" id="hp-select" aria-label="Pick a song"></select>
+    </div>
+  </div>
   <div class="header-links">
     <h3><a href="/index.html">HOME</a></h3>
     <h3><a href="/about.html">ABOUT</a></h3>
@@ -9,7 +17,10 @@ const headerHTML = `
     <h3><a href="/monoliths.html">MONOLITHS</a></h3>
     <h3><a href="/characters.html">CHARACTERS</a></h3>
     <h3><a href="/gallery.html">GALLERY</a></h3>
-    <h3><a href="#" id="winamp-toggle" title="Music">♫</a></h3>
+    <h3><div class="hp-theme" title="Theme">
+      <div class="hp-btn"><i class="fa-solid fa-palette"></i></div>
+      <select class="hp-select" id="theme-select" aria-label="Pick a theme"></select>
+    </div></h3>
   </div>
 </header>
 `;
@@ -24,9 +35,6 @@ fontLink.rel = 'stylesheet';
 fontLink.href = 'https://use.typekit.net/zce6xzy.css';
 document.head.appendChild(fontLink);
 
-const winampScript = document.createElement('script');
-winampScript.src = '/style/winamp.js';
-document.body.appendChild(winampScript);
 
 (function () {
   var path = location.pathname.replace(/index\.html$/, '');
@@ -67,13 +75,13 @@ document.body.appendChild(winampScript);
 })();
 
 document.addEventListener('click', function (e) {
-  var img = e.target.closest('.gallery img');
+  var img = e.target.closest('.gallery img, .art-grid img');
   if (!img) return;
 
   var box = document.createElement('div');
   box.className = 'lightbox';
   var big = document.createElement('img');
-  big.src = img.currentSrc || img.src;
+  big.src = img.dataset.full || img.currentSrc || img.src;
   big.alt = img.alt;
   box.appendChild(big);
   document.body.appendChild(box);
@@ -87,3 +95,38 @@ document.addEventListener('click', function (e) {
   box.addEventListener('click', close);
   document.addEventListener('keydown', onKey);
 });
+
+const playerScript = document.createElement('script');
+playerScript.src = '/style/player.js';
+document.body.appendChild(playerScript);
+
+// Theme picker (ids match the blocks in themes.css)
+(function () {
+  var THEMES = [
+    { id: 'dark-1',  name: 'Dark 1' },
+    { id: 'light-1', name: 'Light 1' }
+  ];
+  var KEY = 'retrograde-theme';
+  var root = document.documentElement;
+
+  var saved = THEMES[0].id;
+  try { saved = localStorage.getItem(KEY) || saved; } catch (e) {}
+  if (!THEMES.some(function (t) { return t.id === saved; })) saved = THEMES[0].id;
+  root.setAttribute('data-theme', saved);
+
+  var select = document.getElementById('theme-select');
+  if (!select) return;
+
+  THEMES.forEach(function (t) {
+    var o = document.createElement('option');
+    o.value = t.id;
+    o.textContent = t.name;
+    select.appendChild(o);
+  });
+  select.value = saved;
+
+  select.addEventListener('change', function () {
+    root.setAttribute('data-theme', select.value);
+    try { localStorage.setItem(KEY, select.value); } catch (e) {}
+  });
+})();
