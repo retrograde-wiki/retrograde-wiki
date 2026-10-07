@@ -1,5 +1,5 @@
 ---
-title: SIGNATURES
+title: Signatures
 subtitle: Magic System, Weapons
 toc: true
 hidden: false

@@ -15,8 +15,10 @@ const headerHTML = `
     <h3><a href="/lore/">LORE</a></h3>
     <h3><a href="/map.html">ZONES</a></h3>
     <h3><a href="/monoliths.html">MONOLITHS</a></h3>
-    <h3><a href="/characters.html">CHARACTERS</a></h3>
+
     <h3><a href="/gallery.html">GALLERY</a></h3>
+    <h3><a href="/meta.html">META</a></h3>
+    <h3><a href="/sitemap.html" class="hp-btn hp-sitemap" title="Sitemap"><i class="fa-solid fa-signs-post"></i></a></h3>
     <h3><div class="hp-theme" title="Theme">
       <div class="hp-btn"><i class="fa-solid fa-palette"></i></div>
       <select class="hp-select" id="theme-select" aria-label="Pick a theme"></select>
@@ -24,6 +26,9 @@ const headerHTML = `
   </div>
 </header>
 `;
+
+// <h3><a href="/characters.html">CHARACTERS</a></h3>
+// ^^^ removed for now
 document.getElementById('header-placeholder').innerHTML = headerHTML;
 
 if (window.initHoverSounds) {

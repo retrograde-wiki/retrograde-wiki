@@ -1,4 +1,5 @@
 ---
+hidden: true
 name: Rho
 art: /im/art/rho.png
 arc: red

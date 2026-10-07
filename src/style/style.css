@@ -1302,3 +1302,58 @@ color: var(--white);
 .hp-theme:hover .hp-btn { background: var(--bg2); color: var(--text); }
 
 .hp-theme { margin-left: 0; }
+
+/* ---- Sitemap page ---- */
+.sitemap-page {
+  max-width: 1100px;
+  margin: 120px auto 60px;
+  padding: 40px;
+}
+
+.sitemap-title {
+  font-size: 60px;
+  line-height: 1;
+  margin: 0 0 40px;
+  color: var(--text);
+}
+
+.sitemap-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 36px 30px;
+}
+
+.sitemap-section h2 {
+  font-size: 22px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--line);
+  color: var(--text);
+}
+
+.sitemap-section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sitemap-section li { margin: 0 0 6px; }
+
+@media (max-width: 768px) {
+  .sitemap-page { padding: 20px; margin-top: 100px; }
+}
+
+/* ---- Sitemap button (matches the theme button) ---- */
+body header .header-links a.hp-sitemap {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  letter-spacing: 0;
+  border-radius: 4px;
+}

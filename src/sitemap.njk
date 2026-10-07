@@ -1,0 +1,92 @@
+---
+permalink: /sitemap.html
+eleventyExcludeFromCollections: true
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="/style/style.css">
+  <link rel="icon" href="/im/favicon.png" />
+  <script src="/style/hover.js"></script>
+  <title>RETROGRADE - SITEMAP</title>
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <script src="/header.js"></script>
+
+  <div class="sitemap-page">
+    <h1 class="sitemap-title">Sitemap</h1>
+
+    <div class="sitemap-grid">
+
+      <section class="sitemap-section">
+        <h2>Main</h2>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/meta.html">Meta</a></li>
+          <li><a href="/gallery.html">Gallery</a></li>
+        </ul>
+      </section>
+
+      <section class="sitemap-section">
+        <h2>Lore</h2>
+        <ul>
+          {% for item in collections.lore | sort(attribute="data.title") %}
+            {% if item.url and not item.data.hidden %}
+            <li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </section>
+
+      <section class="sitemap-section">
+        <h2>Zones</h2>
+        <ul>
+          {% for item in collections.zones | sort(attribute="data.name") %}
+            {% if item.url and not item.data.hidden %}
+            <li><a href="{{ item.url }}">{{ item.data.name }}</a></li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </section>
+
+      {#<section class="sitemap-section">
+        <h2>Characters</h2>
+        <ul>
+          {% for item in collections.characters | sort(attribute="data.name") %}
+            {% if item.url and not item.data.hidden %}
+            <li><a href="{{ item.url }}">{{ item.data.name }}</a></li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </section>#}
+
+      <section class="sitemap-section">
+        <h2>Gallery</h2>
+        <ul>
+          {% for item in collections.gallery | sort(attribute="data.order") %}
+            {% if item.url and not item.data.hidden %}
+            <li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </section>
+
+     {#  {% for group, pages in htmlpages %}
+      <section class="sitemap-section">
+        <h2>{{ group }}</h2>
+        <ul>
+          {% for p in pages %}
+          <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </section>
+      {% endfor %}#}
+
+    </div>
+  </div>
+</body>
+</html>

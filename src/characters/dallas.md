@@ -1,4 +1,5 @@
 ---
+hidden: true
 name: Dallas
 arc: red
 pronouns: he/him
