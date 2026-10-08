@@ -1,8 +1,8 @@
 (function () {
   var HOVER_URL = 'https://file.garden/aBb6prPw8QkQxICV/retrograde/sfx/SCPH-10000_00028.wav';
   var CLICK_URL = 'https://file.garden/aBb6prPw8QkQxICV/retrograde/sfx/SCPH-10000_00023.wav'; // swap for your click sound
-  var HOVER_VOLUME = 0.1;
-  var CLICK_VOLUME = 0.1;
+  var HOVER_VOLUME = 0.05;
+  var CLICK_VOLUME = 0.05;
   var NAV_DELAY = 500;
   // ^^^ 1000 is one second)
   var SELECTOR = 'header a, .header-links a, nav a, .menu a';

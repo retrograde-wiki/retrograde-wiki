@@ -2,29 +2,20 @@ import markdownIt from "markdown-it";
 
 export default function (eleventyConfig) {
   eleventyConfig.addWatchTarget("src/_includes/updates.md");
-  eleventyConfig.addPassthroughCopy(
-    "src/**/*.{html,js,css,png,jpg,jpeg,gif,webp,svg,ico,mp3,ogg,mp4,woff,woff2,ttf}"
-  );
 
-  eleventyConfig.setLibrary(
-    "md",
-    markdownIt({
-      html: true,
-      breaks: true,
-      linkify: true,
-    })
-  );
+  eleventyConfig.addPassthroughCopy("src/im");
+  eleventyConfig.addPassthroughCopy("src/style");
+  eleventyConfig.addPassthroughCopy("src/*.js");
+  eleventyConfig.addPassthroughCopy("src/**/*.html");
 
-  const isProduction = process.env.ELEVENTY_ENV === "production";
+  eleventyConfig.setLibrary("md", markdownIt({
+    html: true,
+    breaks: true,
+    linkify: true,
+  }));
 
   return {
-    pathPrefix: isProduction ? "/retrograde-wiki/" : "/",
-
     templateFormats: ["njk", "md"],
-
-    dir: {
-      input: "src",
-      output: "_site",
-    },
+    dir: { input: "src", output: "_site" },
   };
 }

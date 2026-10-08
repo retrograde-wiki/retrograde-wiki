@@ -1,7 +1,7 @@
 ---
 title: The Nine Moons
 subtitle: Zenith's Nine peculiar moons
-hidden: false
+hidden: true
 ---
 
 ## FIRST SECTION

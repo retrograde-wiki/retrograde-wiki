@@ -4,72 +4,44 @@ subtitle: Magic System, Weapons
 toc: true
 hidden: false
 ---
-*page needs lore update before launch cause signatures arent hidden anymore. if i forgot this im gonna lose it*
-
 
 # SIGNATURES
 
-**Signatures** are extremely rare, intelligent entities that take the form of unusual weapons. They possess powerful abilities and can form a permanent bond with a human known as a **Signer**.
+**Signatures** are rare intelligent weapons created from the cores of a powerful extinct species of creatures known as **Moon Children**. Each Signature possesses its own abilities and can form a permanent bond with a compatible human.
 
-The true origin of Signatures is unknown to modern society. They are commonly regarded as urban legends, with most people having never encountered a genuine Signature or Signer.
+A person bonded to a Signature is called a **Signer**.
 
-## ORIGIN
-
-<aside>
-<img src="/icons/book-closed_blue.svg" alt="/icons/book-closed_blue.svg" width="40px" />
-
-This is Nerd stuff for flavor, not necessary to know.
-
-</aside>
-
-Signatures originated during the early centuries of human settlement on Zenith.
-
-Ancient human factions discovered a number of extraordinarily powerful creatures native to Zenith, now collectively referred to as **Beasts**. Each Beast possessed a highly energetic **core** within its body. Removing the core killed the creature.
-
-During the wars between early human factions, researchers discovered that these cores could be extracted and stabilized into powerful weapons. The resulting weapons became the first Signatures.
-
-The people who developed them did not understand that the cores retained a form of intelligence. As the civilizations responsible for their creation disappeared or reorganized after the wars, knowledge of how to create new Signatures was gradually lost.
-
-All known Beasts are now extinct, meaning no new Signature cores can be obtained.
-
-Many of the Signatures created during this period were subsequently lost, destroyed, or abandoned. The surviving Signatures are scattered throughout Zenith and are rarely encountered.
+Signatures are known to exist, but they are still extremely uncommon. Most people will never encounter one.
 
 ## THE BOND
 
-A Signature will only allow itself to be wielded by a compatible person. This compatibility is not fully understood and appears to depend on a combination of personality, experiences, values, temperament, and other factors that have not been identified.
+A Signature can only be wielded by someone it accepts. What makes someone compatible isn't fully understood, although personality, experiences, and temperament seem to play a role.
 
-Once bonded, the human becomes a **Signer**.
+Once bonded, the human becomes a Signer. The Signature will normally refuse to work for anyone else, and its appearance may gradually change as its relationship with its Signer develops.
 
-A Signature normally refuses to function for anyone other than its Signer. Some may actively resist attempts to use them, such as becoming unusually heavy or changing their physical configuration.
-
-The bond also causes the Signature to gradually change. Its appearance may subtly adapt to its Signer, with more significant changes developing over the course of a long-term relationship.
+The bond also gives Signers physical abilities beyond those of ordinary humans, including increased strength, speed, endurance, and resilience.
 
 ## ABILITIES
 
-Each Signature possesses its own distinct ability or family of related abilities. These abilities can usually be applied in several different ways, although their full potential is not immediately apparent to a new Signer.
+Every Signature has its own unique ability or set of related abilities. A Signer usually learns the most obvious uses first, with more advanced applications developing through experience and experimentation.
 
-New Signers generally understand a Signature's most obvious functions first. More advanced applications require experimentation, practice, and a growing understanding of the Signature itself.
+No two Signatures are necessarily alike, and their abilities can vary dramatically.
 
-Signers also possess physical abilities beyond those of ordinary humans. Strength, speed, endurance, and resilience are enhanced through the bond, with the effects becoming more pronounced when actively using a Signature.
-
-## DISTORTION
+## DISTORTIONS
 
 A **Distortion** occurs when the bond between a Signer and their Signature becomes severely destabilized.
 
-Living Signers can temporarily enter a Distortion state during extreme emotional distress. Fear, grief, rage, guilt, despair, and other forms of emotional overload can cause the Signature to merge progressively with its Signer.
+This can happen while a Signer is alive, usually during extreme emotional distress. The Signature begins to merge with its Signer, gradually taking control of their body and actions. Early stages can sometimes be reversed, but advanced Distortions are increasingly difficult to recover from.
 
-The transformation occurs gradually. Early stages may be reversible, while later stages become increasingly difficult to recover from. As the process advances, the Signer gradually loses control of their body and actions.
+A Distortion can also occur when a Signer dies. Peaceful deaths generally leave the Signature unbound, allowing it to eventually choose someone new. Violent deaths or deaths accompanied by intense unresolved attachment can cause the Signature to instead preserve its bond.
 
-Death can also result in a Distortion under certain circumstances. A Signer who dies peacefully, such as from illness or old age, will generally leave their Signature unbound, allowing it to eventually choose another compatible person.
+A complete Distortion is no longer the original person. It becomes a new creature shaped by the Signature and its former relationship with the Signer.
 
-Violent death or death accompanied by intense unresolved attachment may instead cause the Signature to attempt to preserve its bond. In these cases, a complete Distortion may form.
+## SIGNERS
 
-A complete Distortion is a new creature rather than a transformed surviving Signer. The original person's consciousness is lost, and the resulting creature possesses a unique appearance and behavior determined by the Signature and its former bond.
+There are very few active Signers across Zenith. Some openly use their Signatures, while others keep them hidden to avoid attention from Monoliths, researchers, criminals, Fixers, or anyone else interested in their abilities.
 
-## MODERN SIGNATURES
+For most people, seeing a genuine Signature is unusual enough to be memorable.
+---
 
-Very few active Signers exist across Zenith, and most deliberately conceal their identities. The existence of Signatures is widely known as a rumor, but genuine evidence is rare.
-
-Signers may attract unwanted attention from Monoliths, researchers, criminals, Fixers, or other interested parties if their Signature becomes known.
-
-As a result, most Signers live ordinary lives while keeping their abilities hidden.
+I think this is much better for the **public wiki** specifically. The Beast-core history, the exact process of creating Signatures, and the more detailed rules around Distortion can live in the private wiki where they won't overwhelm someone who's just trying to understand what a Signer is.

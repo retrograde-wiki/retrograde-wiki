@@ -742,7 +742,7 @@ header {
   right: 20px;
   bottom: 20px;
   width: 350px;
-  height: 190px;
+  height: 250px;
   overflow-y: auto;
   box-sizing: border-box;
   padding: 14px 14px 6px;
@@ -780,12 +780,26 @@ header {
 
 .update-box h1 {
   font-family: inherit;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin: 0 0 4px;
+  padding: 0;
+  color: inherit;
+}
+
+.update-box h2 {
+  font-family: inherit;
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 3px;
   margin: 0 0 4px;
   padding: 0;
   color: inherit;
+}
+
+.update-box hr {
+    color: var(--accent);
 }
 
 .update-box ul {
@@ -1345,7 +1359,6 @@ color: var(--white);
   .sitemap-page { padding: 20px; margin-top: 100px; }
 }
 
-/* ---- Sitemap button (matches the theme button) ---- */
 body header .header-links a.hp-sitemap {
   width: 32px;
   height: 32px;
@@ -1356,4 +1369,60 @@ body header .header-links a.hp-sitemap {
   font-size: 14px;
   letter-spacing: 0;
   border-radius: 4px;
+}
+
+.guestbook-link {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 6px 12px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: var(--text);
+  background: var(--accent);
+  border-radius: 4px;
+}
+
+.guestbook-link:hover {
+  background: var(--bg2);
+  color: var(--text);
+}
+
+/* ---- 88x31 buttons ---- */
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.buttons a {
+  display: block;
+  line-height: 0;
+}
+
+.buttons img {
+  display: block;
+  width: 88px;
+  height: 31px;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+/* bigger: add class "x2" to the div (176x62) */
+.buttons.x2 img { width: 176px; height: 62px; }
+
+.buttons a:hover img { opacity: 0.8; }
+
+/* the box with copy-paste code for your own button */
+.button-code {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 14px;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  resize: vertical;
 }

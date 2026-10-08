@@ -4,15 +4,15 @@
 /* Self note: the theme changer is on the header. */
 
 [data-theme="dark-1"] {
-  --bg: #0c0b0f; /* Page backgroundss */
+  --bg: #0c0b0f; /* Page backgrounds */
   --bg2: #111923;
   --text: #f0f5fa;
   --text-dim: #607285;
   --line: #3a3a44;
   --panel: #1f1f26; /* Buttons/panels */
   --panel2: #8b949e;
-  --surface: rgba(6, 6, 8, 0.5); /* Transrulance */
-  --overlay: #000000;  /* Tooltips/accessability stuff dont touch */
+  --surface: rgba(6, 6, 8, 0.5); /* opacity */
+  --overlay: #000000;  /* Tooltips/Accessability stuff dont touch */
   --accent: #2f54eb;
   --accent2: #ed5365;
   --accent3: #ffd324;
