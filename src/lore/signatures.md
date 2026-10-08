@@ -1,5 +1,6 @@
 ---
 title: Signatures
+category: basics
 subtitle: Magic System, Weapons
 toc: true
 hidden: false

@@ -29,8 +29,9 @@
   <main class="main-width">
 
     <div class="wiki-layout">
-      <!-- Main Content Area -->
-      <div class="wiki-main">
+
+
+        <div class="wiki-main">
         <h1 class="country-title">{{ name }}</h1>
         {% if subtitle or pronunciation %}
         <p class="country-subtitle">{{ subtitle }}
@@ -45,17 +46,18 @@
         </div>
       </div>
 
-      <!-- Sidebar Infobox -->
       <aside class="wiki-infobox">
         <div class="infobox-header">
-          <h2>{{ officialName or name }}</h2>
+            <h2>{{ officialName or name or title }}</h2>
         </div>
 
+        {#
         {% if flag %}
         <div class="infobox-flag">
           <img src="{{ flag }}" alt="Flag of {{ name }}">
         </div>
         {% endif %}
+        #}
 
         <div class="infobox-content">
           {% if capital %}<div class="infobox-row"><div class="infobox-label">Capital:</div><div class="infobox-value">{{ capital }}</div></div>{% endif %}
@@ -82,7 +84,6 @@
   </main>
 
   <script>
-    // Build the Contents list from the ## headings
     const toc = document.getElementById('toc-content');
     document.querySelectorAll('.zone-body h2').forEach(function (h) {
       const id = h.id || h.textContent.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');

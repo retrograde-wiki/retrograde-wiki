@@ -7,7 +7,6 @@
         { title: 'Infinite Potentiality - Machine Girl', url: 'https://file.garden/aBb6prPw8QkQxICV/retrograde/music/winamp/Infinite%20Potentiality%20%5BAaALewnH2Ak%5D.mp3' },
         { title: 'Human, A Cosmic Horror - kaizo slumber', url: 'https://file.garden/aBb6prPw8QkQxICV/retrograde/music/winamp/Human%2C%20A%20Cosmic%20Horror%20-%20kaizo%20slumber.mp3' },
         { title: 'Icon Killer - METAROOM', url: 'https://file.garden/aBb6prPw8QkQxICV/retrograde/music/winamp/Icon%20Killer%20%5BtBmUbFFR42o%5D.mp3' },
-        { title: 'Starstruck - TUNEDEF', url: 'https://file.garden/aBb6prPw8QkQxICV/retrograde/music/winamp/Starstruck%20(Liquid%20DnB)%20%5B0BGM2EkI9x4%5D.mp3' },
         { title: 'Cyan Hardcore - Machine Girl', url: 'https://file.garden/aBb6prPw8QkQxICV/retrograde/music/winamp/Cyan%20Hardcore%20%5BQcBYWkE2CMs%5D.mp3' },
         { title: 'Axium Crisis - ak+q', url: 'https://file.garden/aBb6prPw8QkQxICV/retrograde/music/winamp/Axium%20Crisis%20ak%2Bq.mp3' },
         { title: 'Valley of Fools - Marzuku', url: 'https://file.garden/aBb6prPw8QkQxICV/retrograde/music/winamp/Marzuku%EF%BC%9A%20Valley%20of%20Fools%20.mp3' },

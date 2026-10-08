@@ -1,5 +1,6 @@
 ---
 title: TITTLEE
+category: basics
 subtitle: subttitle
 hidden: true
 toc: false

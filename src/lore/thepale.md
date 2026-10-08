@@ -1,5 +1,6 @@
 ---
 title: The Pale
+category: basics
 subtitle: Outside the Zones
 hidden: false
 toc: false

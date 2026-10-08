@@ -29,8 +29,9 @@
   <main class="main-width">
 
     <div class="wiki-layout">
-      <!-- Main Content Area -->
-      <div class="wiki-main">
+
+
+        <div class="wiki-main">
         <h1 class="country-title">Rho</h1>
         
 
@@ -88,10 +89,9 @@
         </div>
       </div>
 
-      <!-- Sidebar Infobox -->
       <aside class="wiki-infobox">
         <div class="infobox-header">
-          <h2>Rho</h2>
+            <h2>Rho</h2>
         </div>
 
         
@@ -121,7 +121,6 @@
   </main>
 
   <script>
-    // Build the Contents list from the ## headings
     const toc = document.getElementById('toc-content');
     document.querySelectorAll('.zone-body h2').forEach(function (h) {
       const id = h.id || h.textContent.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');

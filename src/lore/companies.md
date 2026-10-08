@@ -1,5 +1,6 @@
 ---
 title: Companies, Monoliths, and Government
+category: basics
 subtitle: How Zenith is governed.
 toc: true
 hidden: false

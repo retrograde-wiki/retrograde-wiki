@@ -1,5 +1,6 @@
 ---
 title: Zenith
+category: basics
 subtitle: The Planet Itself
 hidden: false
 toc: true

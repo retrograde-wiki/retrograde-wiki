@@ -1,15 +1,19 @@
 ---
 title: Lore
-subtitle:
+subtitle: The world of Retrograde
 layout: lore.njk
 permalink: /lore/index.html
 eleventyExcludeFromCollections: true
 ---
+{% set categoryOrder = ["The Basics", "Timeline", "Society"] %}
 
-<ul>
-{% for item in collections.lore %}
-  {% if not item.data.hidden %}
-  <li><a href="{{ item.url }}">{{ item.data.title }}</a>{% if item.data.subtitle %} – {{ item.data.subtitle }}{% endif %}</li>
-  {% endif %}
-{% endfor %}
+{% for group in collections.lore | groupByCategory(categoryOrder) %}
+
+<h2 class="lore-cat-title">{{ group.name }}</h2>
+<ul class="lore-cat-list">
+  {% for item in group.items %}
+  <li><a href="{{ item.url }}">{{ item.data.title }}</a>{% if item.data.subtitle %} <span class="lore-cat-sub">{{ item.data.subtitle }}</span>{% endif %}</li>
+  {% endfor %}
 </ul>
+
+{% endfor %}

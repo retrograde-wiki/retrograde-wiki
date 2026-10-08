@@ -36,10 +36,10 @@ eleventyExcludeFromCollections: true
         {% if item.url and not item.data.hidden %}
         <a class="navpage-item" href="{{ item.url }}">
           <div class="navpage-image">
-            {% if item.data.flag %}<img src="{{ item.data.flag }}" alt="" loading="lazy">{% endif %}
+            {% if item.data.art %}<img src="{{ item.data.art }}" alt="" loading="lazy">{% endif %}
           </div>
           <div class="navpage-content">
-            <h3>{{ item.data.name }}</h3>
+            <h3>{{ item.data.title }}</h3>
             {% if item.data.description %}<p>{{ item.data.description }}</p>{% endif %}
           </div>
         </a>

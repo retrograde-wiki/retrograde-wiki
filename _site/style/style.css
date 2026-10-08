@@ -130,17 +130,17 @@ header {
 
 .header-links a {
   display: inline-block;
-  padding: 8px 20px;
+  padding: 8px 15px;
   height: 100%;
   font-family: 'Anybody', sans-serif;
   font-variation-settings:
       "wdth" 125;
   font-size: 16px;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
   color: var(--text-color);
   background-color: var(--panel);
-  border-radius: 4px;
+  border-radius: 6px;
   margin-left: 0;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
@@ -411,6 +411,7 @@ header {
   margin: 0;
   font-size: 24px;
   border: none;
+  text-transform: uppercase;
   padding: 0;
 }
 
@@ -673,6 +674,10 @@ header {
 
 .zone-body details {
   margin: 0 0 6px 0;
+}
+
+.zone-body h2 {
+ border-bottom: 2px solid var(--panel);
 }
 
 .zone-body summary {
@@ -1575,3 +1580,36 @@ body header .header-links a.hp-sitemap {
 }
 
 .map-container img { cursor: zoom-in; }
+
+/* ---- Lore index categories ---- */
+.lore-cat-title { margin-top: 50px; }
+.lore-cat-title a { color: var(--text); }
+.lore-cat-title a:hover { color: var(--accent); }
+
+.lore-soon {
+  margin-left: 10px;
+  font-size: 18px;
+  color: var(--text-dim);
+}
+
+.lore-cat-desc {
+  margin: 0 0 14px;
+  color: var(--text-dim);
+}
+
+.lore-cat-list {
+  list-style: none;
+  margin: 0 0 30px;
+  padding: 0;
+}
+
+.lore-cat-list li {
+  margin: 0 0 8px;
+  font-size: 20px;
+}
+
+.lore-cat-sub {
+  margin-left: 10px;
+  font-size: 16px;
+  color: var(--text-dim);
+}
