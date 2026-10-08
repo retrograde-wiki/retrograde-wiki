@@ -1,0 +1,28 @@
+---
+layout: gallerypage.njk
+title: Monoliths
+subtitle: The corporations that run Zenith
+permalink: /monoliths.html
+eleventyExcludeFromCollections: true
+---
+
+<div class="mono-list">
+{% for item in collections.monoliths | sort(attribute="data.num") %}
+  {% if item.url and not item.data.hidden %}
+  <a class="mono-row" href="{{ item.url }}">
+    <div class="mono-row-num">{{ item.data.num }}</div>
+    <div class="mono-row-logo">
+      {% if item.data.logo %}<img src="{{ item.data.logo }}" alt="" loading="lazy">{% endif %}
+    </div>
+    <div class="mono-row-main">
+      <div class="mono-row-title">{{ item.data.title }}</div>
+      {% if item.data.description %}<p class="mono-row-desc">{{ item.data.description }}</p>{% endif %}
+    </div>
+    <div class="mono-row-meta">
+      {% if item.data.industry %}<div>{{ item.data.industry }}</div>{% endif %}
+      {% if item.data.zone %}<div>{{ item.data.zone }}</div>{% endif %}
+    </div>
+  </a>
+  {% endif %}
+{% endfor %}
+</div>

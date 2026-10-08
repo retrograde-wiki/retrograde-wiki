@@ -1,0 +1,52 @@
+---
+permalink: /zones.html
+eleventyExcludeFromCollections: true
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="/style/style.css">
+  <link rel="icon" href="/im/favicon.png" />
+  <script src="/style/hover.js"></script>
+  <title>RETROGRADE - ZONES</title>
+  <style>
+    :root {
+      --hl-color: var(--hl-yellow);
+      --bg: var(--bg-grey);
+    }
+  </style>
+</head>
+<body>
+
+  <div id="header-placeholder"></div>
+  <script src="/header.js"></script>
+
+  <div class="map-container">
+    <img id="mapImage" class="map-image" src="/im/map/map.png" alt="Map of Zenith">
+  </div>
+
+  <div class="continent-section">
+    <p><i>Pages are a work in progress.</i></p>
+    <h2 class="continent-title">LIST OF ZONES</h2>
+
+    <div class="zone-list">
+      {% for item in collections.zones | sort(attribute="data.name") %}
+        {% if item.url and not item.data.hidden %}
+        <a class="navpage-item" href="{{ item.url }}">
+          <div class="navpage-image">
+            {% if item.data.flag %}<img src="{{ item.data.flag }}" alt="" loading="lazy">{% endif %}
+          </div>
+          <div class="navpage-content">
+            <h3>{{ item.data.name }}</h3>
+            {% if item.data.description %}<p>{{ item.data.description }}</p>{% endif %}
+          </div>
+        </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+</body>
+</html>

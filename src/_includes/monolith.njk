@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  {% if hidden %}<meta name="robots" content="noindex">{% endif %}
+  <link rel="stylesheet" href="/style/style.css">
+  <link rel="icon" href="/im/favicon.png" />
+  <script src="/style/hover.js"></script>
+  <title>RETROGRADE - {{ title | upper }}</title>
+  <style>
+    :root {
+      --charcolor: var(--{{ arc or "grey" }});
+      --bg: var(--bg-{{ arc or "grey" }});
+      --hl-color: var(--hl-{{ arc or "grey" }});
+    }
+  </style>
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <script src="/header.js"></script>
+
+  <div class="lore-container">
+    <div class="lore-header">
+      <h1 class="lore-title">{{ title }}</h1>
+      {% if subtitle %}<p class="intro-subtitle">{{ subtitle }}</p>{% endif %}
+      {% if updated %}<p class="lore-updated">Last updated: {{ updated }}</p>{% endif %}
+    </div>
+
+    {% if logo or image %}
+    <div class="mono-images">
+      {% if logo %}<div class="mono-logo"><img src="{{ logo }}" alt="{{ title }} logo"></div>{% endif %}
+      {% if image %}<div class="mono-art"><img src="{{ image }}" alt="{{ title }}"></div>{% endif %}
+    </div>
+    {% endif %}
+
+    {% if toc %}
+    <div class="lore-toc">
+      <div class="lore-toc-header" onclick="toggleMonoTOC()">
+        <span class="lore-toc-title">Contents</span>
+        <span class="lore-toc-toggle" id="mono-toc-toggle">[hide]</span>
+      </div>
+      <ol class="lore-toc-list" id="mono-toc-list"></ol>
+    </div>
+    {% endif %}
+
+    <div class="lore-section mono-body{% if collapse %} zone-body{% endif %}">
+      {{ content | safe }}
+    </div>
+  </div>
+
+  {% if toc %}
+  <script>
+    var list = document.getElementById('mono-toc-list');
+    var used = {};
+    document.querySelectorAll('.mono-body h2').forEach(function (h) {
+      var id = h.id || h.textContent.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+      if (used[id]) { used[id]++; id = id + '-' + used[id]; } else { used[id] = 1; }
+      h.id = id;
+      var li = document.createElement('li');
+      var a = document.createElement('a');
+      a.href = '#' + id;
+      a.textContent = h.textContent;
+      li.appendChild(a);
+      list.appendChild(li);
+    });
+    function toggleMonoTOC() {
+      var t = document.getElementById('mono-toc-toggle');
+      var hidden = list.style.display === 'none';
+      list.style.display = hidden ? 'block' : 'none';
+      t.textContent = hidden ? '[hide]' : '[show]';
+    }
+  </script>
+  {% endif %}
+  {% if collapse %}<script src="/style/zone.js"></script>{% endif %}
+</body>
+</html>

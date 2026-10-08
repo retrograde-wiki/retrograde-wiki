@@ -1,0 +1,5 @@
+{
+  "layout": "monolith.njk",
+  "tags": "monoliths",
+  "permalink": "/monoliths/{{ page.fileSlug }}.html"
+}

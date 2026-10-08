@@ -1,6 +1,7 @@
 ---
 hidden: true
 name: Rho
+description: One or two sentences about this zone for the directory.
 art: /im/art/rho.png
 arc: red
 demonym: Rhoan

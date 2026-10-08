@@ -13,7 +13,7 @@ const headerHTML = `
     <h3><a href="/index.html">HOME</a></h3>
     <h3><a href="/about.html">ABOUT</a></h3>
     <h3><a href="/lore/">LORE</a></h3>
-    <h3><a href="/map.html">ZONES</a></h3>
+    <h3><a href="/zones.html">ZONES</a></h3>
     <h3><a href="/monoliths.html">MONOLITHS</a></h3>
 
     <h3><a href="/gallery.html">GALLERY</a></h3>
@@ -80,7 +80,7 @@ document.head.appendChild(fontLink);
 })();
 
 document.addEventListener('click', function (e) {
-  var img = e.target.closest('.gallery img, .art-grid img');
+  var img = e.target.closest('.gallery img, .art-grid img, .map-container img');
   if (!img) return;
 
   var box = document.createElement('div');
