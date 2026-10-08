@@ -36,7 +36,7 @@ Third-party materials remain subject to their respective licenses and rights.
 For Contact, Reach out to projectretrograde@proton.me
 ## OTHER AMAZING WEBSITES
 
-
+<!--
 <div class="buttons">
 <a href="https://forum.melonland.net" target="_blank" rel="noopener" title="forum.melonland.net"><img src="/im/buttons/neighbors/forum.melonland.net.gif" alt="Melonland Forum"></a>
 <a href="https://just-a-husk.neocities.org" target="_blank" rel="noopener" title="just-a-husk.neocities.org"><img src="/im/buttons/neighbors/just-a-husk.neocities.org.webp" alt="Just a Husk"></a>
@@ -50,3 +50,4 @@ For Contact, Reach out to projectretrograde@proton.me
 <a href="https://tofufush.neocities.org" target="_blank" rel="noopener" title="tofufush.neocities.org"><img src="/im/buttons/neighbors/tofufush.neocities.org.gif" alt="The Iron Ragdoll"></a>
 <a href="https://vidapon.net" target="_blank" rel="noopener" title="vidapon.net"><img src="/im/buttons/neighbors/vidapon.net.gif" alt="Vidapon"></a>
 </div>
+-->
