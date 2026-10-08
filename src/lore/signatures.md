@@ -7,19 +7,21 @@ hidden: false
 
 # SIGNATURES
 
-**Signatures** are rare intelligent weapons created from the cores of a powerful extinct species of creatures known as **Moon Children**. Each Signature possesses its own abilities and can form a permanent bond with a compatible human.
+**Signatures** are rare 'living' weapons created from the cores of an old, powerful extinct species known as **Moon Children**. Each Signature possesses its own abilities and can form a permanent bond with a compatible human.
 
 A person bonded to a Signature is called a **Signer**.
 
-Signatures are known to exist, but they are still extremely uncommon. Most people will never encounter one.
+Due to its history, Signatures are wildly known to exist, but they are still extremely uncommon. Most people will never encounter one. 
+
+Due to the Extinction of Moon Children in year 320, no more Signatures are capable of being created.
 
 ## THE BOND
 
-A Signature can only be wielded by someone it accepts. What makes someone compatible isn't fully understood, although personality, experiences, and temperament seem to play a role.
+A Signature can only be wielded by someone it bonds with. What makes someone compatible isn't fully understood, although personality, experiences, and temperament seem to play a role.
 
-Once bonded, the human becomes a Signer. The Signature will normally refuse to work for anyone else, and its appearance may gradually change as its relationship with its Signer develops.
+Once bonded, the human becomes a Signer. The Signature will refuse to work for anyone else, and its appearance may gradually change as its relationship with its Signer develops.
 
-The bond also gives Signers physical abilities beyond those of ordinary humans, including increased strength, speed, endurance, and resilience.
+The bond also gives Signers physical abilities beyond those of ordinary humans, such as increased strength, speed, endurance, and resilience.
 
 ## ABILITIES
 
@@ -33,15 +35,14 @@ A **Distortion** occurs when the bond between a Signer and their Signature becom
 
 This can happen while a Signer is alive, usually during extreme emotional distress. The Signature begins to merge with its Signer, gradually taking control of their body and actions. Early stages can sometimes be reversed, but advanced Distortions are increasingly difficult to recover from.
 
-A Distortion can also occur when a Signer dies. Peaceful deaths generally leave the Signature unbound, allowing it to eventually choose someone new. Violent deaths or deaths accompanied by intense unresolved attachment can cause the Signature to instead preserve its bond.
+Death can also result in a Distortion under certain circumstances. A Signer who dies peacefully, such as from illness or old age, will generally leave their Signature unbound, allowing it to eventually choose another compatible person.
 
-A complete Distortion is no longer the original person. It becomes a new creature shaped by the Signature and its former relationship with the Signer.
+Violent death or death accompanied by intense unresolved attachment may instead cause the Signature to attempt to preserve its bond. In these cases, a complete Distortion may form.
+
+A complete Distortion is no longer the original signer, and its final appearance will often resemble the Moon Child's former self.
 
 ## SIGNERS
 
-There are very few active Signers across Zenith. Some openly use their Signatures, while others keep them hidden to avoid attention from Monoliths, researchers, criminals, Fixers, or anyone else interested in their abilities.
+There are very few active Signers across Zenith. 
 
-For most people, seeing a genuine Signature is unusual enough to be memorable.
----
-
-I think this is much better for the **public wiki** specifically. The Beast-core history, the exact process of creating Signatures, and the more detailed rules around Distortion can live in the private wiki where they won't overwhelm someone who's just trying to understand what a Signer is.
+Some openly use their Signatures, while others keep them hidden to avoid attention from Monoliths and other Fixers, or anyone else interested in their abilities.

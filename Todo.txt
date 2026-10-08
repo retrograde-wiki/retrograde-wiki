@@ -1,11 +1,5 @@
-- zone page
 - move all lore over
-- minecraft splashtext?
 - button
 - add more to gallery
-- add more music
-- Neighbors
 
-# homepage
-- buttons like a viddyaa game?
-
+- minecraft splashtext?

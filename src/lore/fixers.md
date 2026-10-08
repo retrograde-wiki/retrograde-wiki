@@ -9,13 +9,13 @@ hidden: false
 
 Fixers can work for pretty much anyone. Private citizens, businesses, Corporations, and even Monoliths will hire them when they need something done without putting their own people on the job.
 
-A Fixer's work can be completely legal, highly illegal, or somewhere in between. It mostly depends on who's paying and where the job takes place.
+A Fixer's work can be completely legal, highly illegal, or somewhere in between depending on who's paying and where the job takes place.
 
-Most Fixers work for themselves and take jobs one at a time, although some form long-term partnerships or work as part of a larger group. Having the right contacts can be just as important as being good at the job itself.
+Most Fixers work for themselves and take jobs one at a time, although some form long-term partnerships or work as part of a larger group, known a **Network**.
 
 ## Common Fixer Jobs
 
-There's no real limit to what a Fixer can be hired to do. Some specialize in a particular kind of work, while others will take whatever pays.
+There's no real limit to what a Fixer can be hired to do. Some specialize in a particular kind of work, while others will take whatever pays. Some examples are, but not limited to:
 
 - **Couriers:** Delivering packages, messages, or people.
 - **Runners:** Moving illegal or restricted cargo between Zones, often through the Pale.
@@ -27,16 +27,12 @@ There's no real limit to what a Fixer can be hired to do. Some specialize in a p
 - **Mechanics:** Repairing equipment, modifying technology, or dealing with systems other people can't figure out.
 - **Admins:** Handling paperwork, finances, taxes, and other boring problems.
 
-A Fixer doesn't necessarily have to be good at any of these things. They just need to know someone who is.
-
 ## FIXER NETWORKS
 
 Fixers don't always work alone. Many belong to Fixer Networks, loose organizations of Fixers who share contacts, resources, and jobs.
 
-Networks can be small groups of friends or large organizations with members spread across multiple Zones. Some are highly organized, with offices, rankings, and their own job boards, while others are little more than a group chat and a list of people to call when a job comes up.
+Networks can be small groups of friends or large organizations with members spread across multiple Zones. Some are highly organized, with offices, rankings, and their own job boards, while others are little more than a and a list of people to call when a job comes up.
 
 Being part of a Network can make finding work much easier. A Fixer might take a job through their Network, pass it along to someone better suited for it, or call on another member when they need help.
 
-There's no single way to run a Network, and they aren't necessarily legal or officially recognized organizations. Some are little more than professional associations, while others operate almost like guilds with their own rules, reputation, and internal hierarchy.
-
-Due to Fixers officially being recognized as Corporations, they are granted a lot more leniency with the law then a freelance or low grade fixer.
+There's no single way to run a Network. Some are little more than professional associations, while others operate almost like guilds with their own rules, reputation, and internal hierarchy. Due to some Networks being officially recognized as Corporations, they are granted a lot more leniency with the law then a freelance or low grade fixer.

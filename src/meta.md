@@ -9,7 +9,7 @@ subtitle: About the project and the site
 ## ABOUT THIS PROJECT
 
 Retrograde began in March of 2023. Regretfully, in the early stages, a wiki was not made for it something being rectified with the existance of this website.
-TO-DO
+## TO-DO
 
 The biggest current priority is adding the whopping 50 characters. References/art are planned for each, so along with finally writing it down, this will take time. But it will get done.
 

@@ -7,7 +7,7 @@ hidden: false
 
 Zenith is governed by **24 Monoliths**– corporations that have grown powerful enough to effectively become governments.
 
-Each Monolith controls one or more **Zones**, along with a major industry. They aren't elected, and they aren't particularly interested in being elected. A Monolith controls the laws, infrastructure, resources, and services within its territory while also running its industry across Zenith.
+Each Monolith controls one or more **Zones**, along with a major industry. A Monolith controls the laws, infrastructure, resources, and services within its territory while also running its industry across Zenith.
 
 The 24 Monoliths together form **The Conglomerate**, which handles things that affect Zenith as a whole.
 
@@ -15,11 +15,11 @@ The 24 Monoliths together form **The Conglomerate**, which handles things that a
 
 Corporations make up the vast majority of Zenith's economy. They own businesses and property, employ people, provide goods and services, and compete with one another for just about everything worth having.
 
-Corporations can own property, maintain security forces, enter contracts, and operate with a considerable amount of independence. A corporation can own a building, a factory, or even large amounts of land, but it cannot simply declare itself a government. **Only Monoliths have sovereignty over a Zone.**
+Corporations operate with a considerable amount of freedom and independence average citizens do not have. But despite their power and ever-looming presence, **Only Monoliths can have sovereignty over a Zone.**
 
-Corporate conflicts are common. Companies may compete over resources, territory, contracts, technology, or political influence. These conflicts can range from economic pressure and espionage to sabotage and armed conflict.
+Corporate conflicts are common. Companies may compete over resources, territory, contracts, technology, or influence. These conflicts can range from economic pressure and espionage to sabotage and even full on armed conflict.
 
-Most of the time, Monoliths leave corporations to deal with their own disputes. They may step in if a conflict starts threatening civilians, infrastructure, or their own interests.
+Most of the time, Monoliths leave corporations to deal with their own disputes, But they may step in if a conflict starts threatening infrastructure or their own interests.
 
 ## MONOLITHS
 
@@ -76,32 +76,32 @@ Some of the most important Conglomerate laws include:
 - Conglomerate Institutions must be recognized throughout Zenith.
 - Monoliths must abide by decisions made through the Conglomerate's voting process.
 
-These laws don't always work quite as well as they sound on paper. Enforcement varies between Zones, and Monoliths are more than capable of interfering with law enforcement when it suits them.
+These laws, despite being universal, aren't enforced very well. Enforcement varies between Zones, and Monoliths are can and will interfere with law enforcement when it suits them.
 
 ## INSTITUTIONS
 
-The **Institutions** are organizations maintained by The Conglomerate to handle things that need to operate across multiple Zones.
+The Institutions are organizations maintained by The Conglomerate that operate across the Zones.
 
-They include:
+Some of the more familiar ones are:
 
-- **The Gavel** – Law enforcement.
-- **The Scale** – Courts and the judicial system.
-- **The Ledger** – Taxation and Conglomerate revenue.
-- **The Registry** – Shared legal and civil records.
-- **The Arm** – Disasters and emergencies affecting multiple Zones.
+- The Gavel: Law enforcement.
+- The Scale: Courts and the judicial system.
+- The Ledger: Taxes and Conglomerate finances.
+- The Registry: Legal and civil records.
+- The Arm: Major disasters and emergencies.
 
-The Institutions are recognized throughout Zenith, but they still operate inside territories controlled by the Monoliths. A local branch can therefore find itself restricted, ignored, or interfered with by the Monolith governing its Zone.
+The Institutions are supposed to operate throughout Zenith, but they still have to work within territory controlled by a Monolith. A local branch can therefore find itself restricted or interfered with by the government of the Zone it operates in.
+
+For most people, dealing with an Institution can feel very different depending on where they are.
 
 ## RELATIONS BETWEEN MONOLITHS
 
-The Monoliths are rivals, but they can't really afford to act like it all the time.
+The Monoliths are competitors, but they can't afford to completely ignore one another.
 
-Every Monolith depends on the others for something. Food, transportation, technology, medicine, infrastructure, and resources all cross Zone borders. No single Monolith can provide everything Zenith needs by itself.
+Every Zone depends on things produced somewhere else. Food might come from one Zone, medicine from another, and transportation may be controlled by a third. Keeping all of this moving requires the Monoliths to cooperate, even when they don't particularly like each other.
 
-That hasn't stopped them from competing.
+They still get in each other's way. A Monolith might try to undercut another company's business, interfere with its operations, or gain an advantage through the Conglomerate. Things can get considerably worse when their interests directly collide.
 
-Monoliths regularly use economic pressure, espionage, sabotage, political influence, and other forms of corporate warfare against one another. Open war is possible, but nobody particularly wants to be responsible for destabilizing Zenith's economy.
+Open warfare is uncommon. A fight between two Monoliths could disrupt entire industries and affect millions of people, so there is usually a reason to find another way.
 
-Instead, the Monoliths usually find a way to cooperate.
-
-Usually.
+For the average person, the Monoliths are simply the powers that run Zenith. Which one you live under determines a surprising amount about your life.Usually.
