@@ -1,0 +1,6 @@
+{
+  "layout": "monolith.njk",
+  "tags": "companies",
+  "permalink": "/companies/{{ page.fileSlug }}.html",
+  "collapse": true
+}

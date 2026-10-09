@@ -1,0 +1,6 @@
+{
+  "layout": "monolith.njk",
+  "tags": "networks",
+  "permalink": "/networks/{{ page.fileSlug }}.html",
+  "collapse": true
+}
