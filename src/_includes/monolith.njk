@@ -11,7 +11,6 @@
   <style>
     :root {
       --charcolor: var(--{{ arc or "grey" }});
-      --bg: var(--bg-{{ arc or "grey" }});
       --hl-color: var(--hl-{{ arc or "grey" }});
     }
   </style>
@@ -20,7 +19,7 @@
   <div id="header-placeholder"></div>
   <script src="/header.js"></script>
 
-  <div class="lore-container">
+  <div class="lore-container mono-page">
     <div class="lore-header">
       <h1 class="lore-title">{{ title }}</h1>
       {% if subtitle %}<p class="intro-subtitle">{{ subtitle }}</p>{% endif %}

@@ -14,7 +14,7 @@ const headerHTML = `
     <h3><a href="/about.html">ABOUT</a></h3>
     <h3><a href="/lore/">LORE</a></h3>
     <h3><a href="/zones.html">ZONES</a></h3>
-    <h3><a href="/monoliths.html">MONOLITHS</a></h3>
+    <h3><a href="/organizations.html" data-match="/monoliths,/institutes,/networks,/companies">ORGANIZATIONS</a></h3>
 
     <h3><a href="/gallery.html">GALLERY</a></h3>
     <h3><a href="/meta.html">META</a></h3>
@@ -75,7 +75,9 @@ document.head.appendChild(fontLink);
     var h = clean(a);
     if (h === '/') return;
     var section = h.replace(/\.html$/, '/');
-    if (path.indexOf(section) === 0) a.classList.add('current');
+    var extra = (a.getAttribute('data-match') || '').split(',').filter(Boolean);
+    var inExtra = extra.some(function (p) { return path.indexOf(p) === 0; });
+    if (path.indexOf(section) === 0 || inExtra) a.classList.add('current');
   });
 })();
 

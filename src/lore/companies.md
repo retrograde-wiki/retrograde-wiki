@@ -1,5 +1,6 @@
 ---
 title: Companies, Monoliths, and Government
+aliases: [Monolith, Monoliths, Conglomerate]
 category: basics
 subtitle: How Zenith is governed.
 toc: true

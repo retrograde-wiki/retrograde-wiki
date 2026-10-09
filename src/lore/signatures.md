@@ -1,5 +1,7 @@
 ---
 title: Signatures
+aliases: [Signer, Signature, Signatures]
+
 category: basics
 subtitle: Magic System, Weapons
 toc: true

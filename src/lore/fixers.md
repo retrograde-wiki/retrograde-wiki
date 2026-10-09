@@ -1,5 +1,6 @@
 ---
 title: Fixers
+aliases: [Fixer, Fixers]
 category: basics
 subtitle: Dont wanna be a Corpo? Look no further!
 updated: "10/06/26"

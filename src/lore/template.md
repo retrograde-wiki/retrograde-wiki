@@ -1,5 +1,7 @@
 ---
+permalink: false
 title: TITTLEE
+aliases: []
 category: basics
 subtitle: subttitle
 hidden: true

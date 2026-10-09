@@ -1,5 +1,6 @@
 {
   "layout": "lore.njk",
   "tags": "lore",
-  "permalink": "/lore/{{ page.fileSlug }}.html"
+  "permalink": "/lore/{{ page.fileSlug }}.html",
+  "collapse": true
 }

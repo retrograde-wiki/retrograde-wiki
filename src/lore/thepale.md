@@ -1,5 +1,6 @@
 ---
 title: The Pale
+aliases: [Pale, The Pale]
 category: basics
 subtitle: Outside the Zones
 hidden: false

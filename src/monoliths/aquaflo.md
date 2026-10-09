@@ -4,12 +4,11 @@ subtitle: Water Extraction
 num: "17"
 industry: Water Extraction
 description: The Monolith responsible for water extraction, purification, and distribution throughout Zenith.
-arc: grey
+arc: red
 logo: /im/logos/company/aquaflo.png
 image: /im/art/monoliths/aquaflo.png
 updated: "10/08/26"
 toc: true
-collapse: false
 hidden: false
 ---
 

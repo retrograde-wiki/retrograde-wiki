@@ -33,7 +33,7 @@
     </div>
     {% endif %}
 
-    <div class="lore-section">
+    <div class="lore-section{% if collapse %} zone-body{% endif %}">
       {{ content | safe }}
     </div>
   </div>
@@ -61,5 +61,6 @@
     }
   </script>
   {% endif %}
+  {% if collapse %}<script src="/style/zone.js"></script>{% endif %}
 </body>
 </html>

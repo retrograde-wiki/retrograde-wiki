@@ -1,24 +1,26 @@
 ---
 hidden: true
-name: Rho
-description: One or two sentences about this zone for the directory.
+title: Rho
+aliases: [Rho, Rhoan, Rhoans]
+description: A massive, sparse and hot zone.
+number: 17
+flag: /im/art/.png
 art: /im/art/rho.png
 arc: red
 demonym: Rhoan
-population: 
 infobox:
   - label: Monolith
-    value: 
+    value: AquaFlo
   - label: Economic Focus
-    value: 
+    value: Water Extraction, Water Processing
   - label: Avg. Income
-    value: 
+    value: Precarious
   - label: Zone Size
-    value: 
+    value: Huge
   - label: Environments
-    value: 
+    value: Badlands, Canyons, Dry Plains
   - label: Climate
-    value: 
+    value: Arid, Dry
 ---
 
 

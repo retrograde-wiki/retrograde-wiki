@@ -12,6 +12,7 @@
   "type": "module",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.6",
+    "cheerio": "^1.2.0",
     "markdown-it": "^15.0.2"
   }
 }

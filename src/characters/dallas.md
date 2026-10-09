@@ -1,6 +1,7 @@
 ---
 hidden: true
 name: Dallas
+aliases: []
 arc: red
 pronouns: he/him
 residence: answer

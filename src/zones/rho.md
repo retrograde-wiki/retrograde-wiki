@@ -1,6 +1,9 @@
 ---
+hidden: false
 title: Rho
+aliases: [Rho, Rhoan, Rhoans]
 description: A massive, sparse and hot zone.
+number: 17
 flag: /im/art/.png
 art: /im/art/rho.png
 arc: red

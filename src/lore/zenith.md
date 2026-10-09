@@ -1,5 +1,6 @@
 ---
 title: Zenith
+aliases: [Zenithian, Zeniths]
 category: basics
 subtitle: The Planet Itself
 hidden: false

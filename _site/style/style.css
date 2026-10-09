@@ -1413,12 +1413,10 @@ body header .header-links a.hp-sitemap {
   image-rendering: crisp-edges;
 }
 
-/* bigger: add class "x2" to the div (176x62) */
 .buttons.x2 img { width: 176px; height: 62px; }
 
 .buttons a:hover img { opacity: 0.8; }
 
-/* the box with copy-paste code for your own button */
 .button-code {
   width: 100%;
   box-sizing: border-box;
@@ -1432,7 +1430,6 @@ body header .header-links a.hp-sitemap {
   resize: vertical;
 }
 
-/* ---- Monolith pages ---- */
 .mono-images {
   display: flex;
   gap: 16px;
@@ -1445,7 +1442,6 @@ body header .header-links a.hp-sitemap {
   min-width: 0;
   height: 260px;
   overflow: hidden;
-  border: 1px solid var(--line);
 }
 
 .mono-logo {
@@ -1454,7 +1450,6 @@ body header .header-links a.hp-sitemap {
   justify-content: center;
   padding: 20px;
   box-sizing: border-box;
-  background: var(--surface);
 }
 
 .mono-logo img { max-width: 100%; max-height: 100%; object-fit: contain; }
@@ -1464,7 +1459,6 @@ body header .header-links a.hp-sitemap {
   .mono-images { flex-direction: column; }
 }
 
-/* ---- Monolith pages ---- */
 .mono-images {
   display: flex;
   gap: 16px;
@@ -1477,7 +1471,6 @@ body header .header-links a.hp-sitemap {
   min-width: 0;
   height: 260px;
   overflow: hidden;
-  border: 1px solid var(--line);
 }
 
 .mono-logo {
@@ -1486,7 +1479,6 @@ body header .header-links a.hp-sitemap {
   justify-content: center;
   padding: 20px;
   box-sizing: border-box;
-  background: var(--surface);
 }
 
 .mono-logo img { max-width: 100%; max-height: 100%; object-fit: contain; }
@@ -1498,7 +1490,6 @@ body header .header-links a.hp-sitemap {
 
 
 
-/* ---- Monolith directory (registry list) ---- */
 .mono-list { border-top: 2px solid var(--line); }
 
 .mono-row {
@@ -1612,4 +1603,20 @@ body header .header-links a.hp-sitemap {
   margin-left: 10px;
   font-size: 16px;
   color: var(--text-dim);
+}
+
+/* ---- Monolith pages: arc color is an accent, not the background ---- */
+.mono-page a { color: var(--charcolor); }
+.mono-page .lore-updated { color: var(--charcolor); }
+.mono-page .lore-toc { border-left-color: var(--charcolor); }
+.mono-page .lore-toc-title { color: var(--charcolor); }
+
+/* ---- Organizations hub + lists without a number ---- */
+.mono-row.hub { grid-template-columns: 1fr; }
+.mono-row.hub .mono-row-title { font-size: 56px; }
+.mono-row.no-num { grid-template-columns: 220px 1fr 220px; }
+
+@media (max-width: 900px) {
+  .mono-row.no-num { grid-template-columns: 1fr; }
+  .mono-row.hub .mono-row-title { font-size: 40px; }
 }
