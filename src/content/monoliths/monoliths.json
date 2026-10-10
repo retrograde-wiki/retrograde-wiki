@@ -1,5 +1,5 @@
 {
-  "layout": "monolith.njk",
+  "layout": "layouts/monolith.njk",
   "tags": "monoliths",
   "permalink": "/monoliths/{{ page.fileSlug }}.html",
   "collapse": true

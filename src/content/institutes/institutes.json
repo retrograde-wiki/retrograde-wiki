@@ -1,5 +1,5 @@
 {
-  "layout": "monolith.njk",
+  "layout": "layouts/monolith.njk",
   "tags": "institutes",
   "permalink": "/institutes/{{ page.fileSlug }}.html",
   "collapse": true

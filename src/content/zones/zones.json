@@ -1,5 +1,5 @@
 {
-  "layout": "zone.njk",
+  "layout": "layouts/zone.njk",
   "tags": "zones",
   "permalink": "/zones/{{ page.fileSlug }}.html"
 }

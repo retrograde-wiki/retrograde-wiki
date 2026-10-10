@@ -1,5 +1,5 @@
 ---
-layout: lore.njk
+layout: layouts/lore.njk
 permalink: /meta.html
 title: Meta
 subtitle: About the project and the site

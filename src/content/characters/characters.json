@@ -1,5 +1,5 @@
 {
-  "layout": "character.njk",
+  "layout": "layouts/character.njk",
   "tags": "characters",
   "permalink": "/characters/{{ page.fileSlug }}.html"
 }
