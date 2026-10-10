@@ -2,7 +2,7 @@ import * as cheerio from "cheerio";
 import markdownIt from "markdown-it";
 
 export default function (eleventyConfig) {
-  const LINK_SOURCES = /^\.\/src\/(lore|monoliths|zones|institutes|networks|companies)\//; // pages that GET links
+  const LINK_SOURCES = /^\.\/src\/content\/(lore|monoliths|zones|institutes|networks|companies)\//; // pages that GET links
   const LINK_TARGET_TAGS = ["lore", "monoliths", "zones", "institutes", "networks", "companies"]; // pages that can be linked TO
   const FIRST_MENTION_ONLY = true; // false = link every mention
   const SKIP_TAGS = new Set(["a", "h1", "h2", "h3", "h4", "h5", "h6", "script", "style",
