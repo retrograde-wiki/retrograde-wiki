@@ -9,6 +9,15 @@ subtitle: About the project and the site
 ## ABOUT THIS PROJECT
 
 Retrograde began in March of 2023. Regretfully, in the early stages, a wiki was not made for it something being rectified with the existance of this website.
+
+## 88 X 31 BUTTONS
+
+<div class="buttons">
+    <img src="/im/buttons/retrograde_red.png" alt="Retrograde Button">
+    <img src="/im/buttons/retrograde_blue.png" alt="Retrograde Button">
+    <img src="/im/buttons/retrograde_green.png" alt="Retrograde Button">
+</div>
+
 ## TO-DO
 
 The biggest current priority is adding the whopping 50 characters. References/art are planned for each, so along with finally writing it down, this will take time. But it will get done.
@@ -27,7 +36,7 @@ Besides that, Adding zones, monoliths, etc. Just getting everything on here.
 
 Retrograde is an independently created fictional setting and creative work. Unless otherwise stated, all original text, artwork, characters, designs, and related materials are protected by their respective rights holders.
 
-Material made available under CC BY-NC-SA 4.0 may be shared and adapted for non-commercial purposes with appropriate attribution and under the same license.
+Material made available under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC-SA 4.0</a> may be shared and adapted for non-commercial purposes with appropriate attribution and under the same license.
 
 The use of Retrograde or its original materials for the training, development, testing, fine-tuning, or operation of artificial intelligence or machine-learning systems is not permitted.
 

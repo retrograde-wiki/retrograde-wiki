@@ -10,17 +10,17 @@ arc: red
 demonym: Rhoan
 infobox:
   - label: Monolith
-    value: AquaFlo
+    value: 
   - label: Economic Focus
-    value: Water Extraction, Water Processing
+    value: 
   - label: Avg. Income
-    value: Precarious
+    value: 
   - label: Zone Size
-    value: Huge
+    value: 
   - label: Environments
-    value: Badlands, Canyons, Dry Plains
+    value: 
   - label: Climate
-    value: Arid, Dry
+    value: 
 ---
 
 

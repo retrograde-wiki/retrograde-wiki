@@ -6,9 +6,10 @@ industry: Healthcare, Medicine, Research
 description: Zenith's largest healthcare corporation and the Monolith responsible for Lamda.
 arc: green
 logo: /im/logos/company/biomedica.svg
-image: /im/placeholder.png
+image: /im/placeholder.pnga
 updated: "10/09/26"
 toc: true
+collapse: false
 hidden: false
 ---
 

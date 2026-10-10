@@ -22,7 +22,7 @@ export default function () {
 
   for (const file of walk(ROOT)) {
     const html = fs.readFileSync(file, "utf8");
-    if (/noindex/i.test(html)) continue; // add <meta name="robots" content="noindex"> to hide a page
+    if (/noindex/i.test(html)) continue;
 
     const rel = path.relative(ROOT, file).split(path.sep);
     const url = "/" + rel.join("/");
