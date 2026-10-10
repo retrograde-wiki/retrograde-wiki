@@ -2,6 +2,11 @@ import * as cheerio from "cheerio";
 import markdownIt from "markdown-it";
 
 export default function (eleventyConfig) {
+  eleventyConfig.addPassthroughCopy({
+    "src/assets/im": "im",
+    "src/assets/style": "style",
+    "src/root": ".",
+  });
   const LINK_SOURCES = /^\.\/src\/content\/(lore|monoliths|zones|institutes|networks|companies)\//; // pages that GET links
   const LINK_TARGET_TAGS = ["lore", "monoliths", "zones", "institutes", "networks", "companies"]; // pages that can be linked TO
   const FIRST_MENTION_ONLY = true; // false = link every mention
@@ -117,10 +122,6 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addWatchTarget("src/_includes/updates.md");
 
-  eleventyConfig.addPassthroughCopy("src/im");
-  eleventyConfig.addPassthroughCopy("src/style");
-  eleventyConfig.addPassthroughCopy("src/*.js");
-  eleventyConfig.addPassthroughCopy("src/**/*.html");
 
   eleventyConfig.setLibrary("md", markdownIt({
     html: true,

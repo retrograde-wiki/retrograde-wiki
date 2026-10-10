@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 
-const ROOT = "src";
+const ROOT = "src/root";
 const SKIP_DIRS = ["_includes", "_data", "style", "im", "node_modules"];
 
 function walk(dir) {
@@ -10,7 +10,7 @@ function walk(dir) {
     const full = path.join(dir, entry.name);
     if (entry.isDirectory()) {
       if (!SKIP_DIRS.includes(entry.name)) out = out.concat(walk(full));
-    } else if (entry.name.endsWith(".html") && !/template/i.test(entry.name)) {
+    } else if (entry.name.endsWith(".html") && !/template/i.test(entry.name) && entry.name !== "404.html") {
       out.push(full);
     }
   }
