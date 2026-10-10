@@ -1,4 +1,5 @@
 ---
+permalink: false
 hidden: true
 title: Rho
 aliases: [Rho, Rhoan, Rhoans]

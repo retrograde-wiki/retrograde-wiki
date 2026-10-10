@@ -1,4 +1,5 @@
 ---
+permalink: false
 title: 
 subtitle: 
 num: "17"
